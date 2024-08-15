@@ -8,15 +8,16 @@ document.addEventListener("shopify:section:load", function() {
 })
 
 function hero_slider() {
-    $('.hero-slider-items').slick({
+    $('.slider-items').slick({ 
+        speed:800,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         arrows:true,
-        dots:true,
+        dots:false,
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
-      }); 
+    }); 
 }
