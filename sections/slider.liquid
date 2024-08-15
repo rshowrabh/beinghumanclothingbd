@@ -1,6 +1,6 @@
 
 {{ 'slick.css' | asset_url | stylesheet_tag }}
-{{'component-sliders.css' | asset_url | stylesheet_tag: preload: true}}
+{{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
 
 {%- liquid
   assign s = section.settings
@@ -99,7 +99,7 @@
 <script>
     var arrow; 
     window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
-  </script>
+</script>
 
 {{ 'slick.min.js' | asset_url | script_tag }}
 
