@@ -27,9 +27,7 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-
     {{ 'jquery.min.js' | asset_url | script_tag }}
-    {{ 'slick.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
@@ -368,12 +366,7 @@
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
     </script>
-    <script>
-      var arrow; 
-      window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
-    </script>
 
-    {{ 'slick.min.js' | asset_url | script_tag }}
     {{ 'main.js' | asset_url | script_tag }}
 
     {%- if settings.predictive_search_enabled -%}

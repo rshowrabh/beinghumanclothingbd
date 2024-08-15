@@ -1,3 +1,5 @@
+
+{{ 'slick.css' | asset_url | stylesheet_tag }}
 {{'component-sliders.css' | asset_url | stylesheet_tag: preload: true}}
 
 {%- liquid
@@ -94,6 +96,12 @@
         {% endfor %}
     </div>
 </div>
+<script>
+    var arrow; 
+    window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
+  </script>
+
+{{ 'slick.min.js' | asset_url | script_tag }}
 
 {% schema %}
   {
