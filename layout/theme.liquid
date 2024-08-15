@@ -332,8 +332,8 @@
       var arrow; 
       window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
     </script>
-    {{ 'main.js' | asset_url | script_tag }}
     {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'script.js' | asset_url | script_tag }}
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
