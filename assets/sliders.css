@@ -81,6 +81,37 @@
 
 /* slick slider dots  */
 
+.slick-dots button {
+    display: none;
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+.slick-dots li {
+    background-color: #FFF;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .1s all linear;
+    margin-right: 10px;
+}
+.slick-dots li button::before{
+    display: none;
+}
+.slick-dots .slick-active {
+    background: transparent;
+    transform: scale(3);
+    border: 1px solid #FFF;
+}
+.slick-dots li.slick-active button::before{
+    color: transparent;
+}
+.slider-items.slick-initialized.slick-slider.slick-dotted {
+    margin-bottom: 0;
+}
 
 svg.hero-placeholder-svg {
     display: block;
