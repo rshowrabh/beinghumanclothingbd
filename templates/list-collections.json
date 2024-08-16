@@ -57,24 +57,24 @@
     "product_tabs_eytVp4": {
       "type": "product-tabs",
       "blocks": {
-        "tab_p7e6m6": {
+        "tab_CmegYd": {
           "type": "tab",
           "settings": {
             "tab_heading": "Men",
             "collection": "belts-for-men"
           }
         },
-        "tab_YCJCTU": {
+        "tab_M9ppyx": {
           "type": "tab",
           "settings": {
-            "tab_heading": "Women",
+            "tab_heading": "WOmen",
             "collection": "women-jents"
           }
         }
       },
       "block_order": [
-        "tab_p7e6m6",
-        "tab_YCJCTU"
+        "tab_CmegYd",
+        "tab_M9ppyx"
       ],
       "settings": {
         "heading": "",
