@@ -131,8 +131,6 @@
         "column_rj7bUk": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
             "button_label": "Explore More",
             "button_link": ""
           }
@@ -140,8 +138,6 @@
         "column_YaJQf8": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
             "button_label": "Explore More",
             "button_link": ""
           }
@@ -156,12 +152,26 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "popular_Vcx9xU": {
+      "type": "popular",
+      "settings": {
+        "offer": "-20%",
+        "heading": "Save on Sets",
+        "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
+        "button_label": "Get only $39.00",
+        "button_link": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "slider_pNxV9F",
     "image_banner",
     "featured_collection",
-    "two_column_section_KTKXnP"
+    "two_column_section_KTKXnP",
+    "popular_Vcx9xU"
   ]
 }
