@@ -58,10 +58,13 @@
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-   var mixer = mixitup('.collection_list', {
-    controls: {
-        toggleDefault: '.man'
+   $(function(){
+  $('.collection_list').mixItUp({
+    load: {
+      filter: '.category-1,.category-2'
     }
+  });
+});
 });
 </script>
   {% schema %}
