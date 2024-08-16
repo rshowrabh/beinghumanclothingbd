@@ -41,7 +41,7 @@
         <button type="button" class="control" data-sort="default:desc">Desc</button>
     </div>
 
-    <div class="container">
+    <div class="collection-list">
         <div class="mix green">G</div>
         <div class="mix green">GA</div>
         <div class="mix blue">B</div>
@@ -59,7 +59,7 @@
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-    var containerEl = document.querySelector('.container');
+    var containerEl = document.querySelector('.collection-list');
     var mixer = mixitup(containerEl);
 </script>
   {% schema %}
