@@ -14,7 +14,7 @@
         justify-content:center;
         align-items:center;
     }
-    .heading label{
+    .heading button{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -32,7 +32,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <label class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</label>
+            <button type="button" class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</button>
             {% endfor %}
         </div>
         <div class="collection-list">
@@ -52,7 +52,6 @@
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
     var containerEl = document.querySelector('.collection-list');
-
     var mixer = mixitup(containerEl);
 </script>
   {% schema %}
