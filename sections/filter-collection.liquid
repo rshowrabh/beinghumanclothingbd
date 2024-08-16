@@ -33,11 +33,13 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
+        <div class="heading">
+            {%- for block in section.blocks -%}
+            <span>{{block.settings.title}}</span>
+            {% endfor %}
+        </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
-            <div class="heading">
-            <span>{{block.settings.title}}</span>
-        </div>
             {% for collection in block.settings.collection %}
             <li class="collection-list__item grid__item">
                 {% render 'card-collection',
