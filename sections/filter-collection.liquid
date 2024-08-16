@@ -32,7 +32,9 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <span data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span class="{% if block[0] %}
+              mixitup-control-active
+            {% endif %}" data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
