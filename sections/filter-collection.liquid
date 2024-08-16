@@ -31,65 +31,17 @@
       }
     }
   {%- endstyle -%}
-  <style>
-   .tab{
-  cursor: pointer;
-  padding:10px 20px;
-  margin:0px 2px;
-  background:#000;
-  display:inline-block;
-  color:#fff;
-  border-radius:3px 3px 0px 0px;
-  box-shadow: 0 0.5rem 0.8rem #00000080;
-}
-.panels{
-  background:#fffffff6;
-  box-shadow: 0 2rem 2rem #00000080;
-  min-height:200px;
-  width:100%;
-  max-width:500px;
-  border-radius:3px;
-  overflow:hidden;
-  padding:20px;  
-}
-.panel{
-  display:none;
-  animation: fadein .8s;
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-.panel-title{
-  font-size:1.5em;
-  font-weight:bold
-}
-.radio{
-  display:none;
-}
-#one:checked ~ .panels #one-panel,
-
-#one:checked ~ .tabs #one-tab{
-  background:#fffffff6;
-  color:#000;
-  border-top: 3px solid #000;
-}
-  </style>
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <label class="tab" id="one" for="{{block.id}}">{{block.settings.title}}</label>
+            <label>{{block.settings.title}}</label>
             {% endfor %}
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <li id="one-panel" class="panel collection-list__item grid__item">
+            <li class="collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
