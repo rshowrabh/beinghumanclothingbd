@@ -6,6 +6,7 @@
     .section-two-column{
         overflow: hidden;
         text-align:center;
+        width: calc(50% - 20px);
     }
     .section-two-column image img{
         height: inherit;
@@ -20,6 +21,9 @@
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
+      .section-two-column{
+        width:100%;
+    }
     }
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
