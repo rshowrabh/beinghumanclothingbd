@@ -43,9 +43,15 @@
     align-items: flex-start;
     justify-content: center;
 }
+.offer-details > * {
+    margin: 0px;
+}
 
-.offer-details h1 {
-    border-bottom: 1px solid #000;
+.special-offer {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1em;
 }
 
 /* Countdown timer styling */
@@ -80,14 +86,16 @@
   <div class="section-{{ section.id }}-padding page-width">
      <!-- Main container for the offer section -->
      <div class="offer-section">
+        
       <!-- Offer details container -->
       <div class="offer-details">
-        <h3>Popular</h3>
-        <h1>{{ section.settings.heading }}</h1>
-        <p>{{ section.settings.subtext }}</p>
-        <!-- Call to action button -->
-        <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
-    </div>
+          <div class="special-offer">Popular</div>
+          <h1>{{ section.settings.heading }}</h1>
+          <hr>
+          <p>{{ section.settings.subtext }}</p>
+          <!-- Call to action button -->
+          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
+      </div>
       <!-- Image container -->
       <div class="image-container">
         {% if section.settings.image != blank %}
