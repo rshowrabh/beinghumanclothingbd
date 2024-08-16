@@ -11,59 +11,25 @@
 .w-100 {
     width: 100%;
 }
-
-
 .btn {
     height: 52px;
     display: flex;
     align-items: center;
     max-width: fit-content;
-    padding: 0 40px;
+    padding: 15px 50px;
     border-radius: 5px;
     text-decoration: none;
     justify-content: center;
     text-transform: uppercase;
-    font-size: var(--body_font);
-    font-weight: var(--font-weight-medium);
+    font-size: 14px;
+    font-weight: 600;
     transition: 300ms;
-    padding-top: 4px;
 }
-
 .primary-btn {
-    background: rgb(var(--color-button));
-    color: rgb(var(--color-button-text));
-    border: 2px solid rgb(var(--color-button));
+    background: #14261C;
+    color: #DC9A0E;
 }
 
-.seconday-btn {
-    background: rgb(var(--color-secondary-button));
-    color: rgb(var(--color-secondary-button-text));
-    border: 2px solid rgb(var(--color-secondary-button-text));
-}
-
-.primary-btn:hover {
-    background: rgb(var(--color-button-hover));
-    color: rgb(var(--color-button-text-hover));
-    border-color: rgb(var(--color-button-hover));
-} 
-.seconday-btn:hover {
-    background: rgb(var(--color-secondary-button-hover));
-    color: rgb(var(--color-secondary-button-text-hover));
-    border-color: rgb(var(--color-secondary-button-hover));
-} 
-
-.section-heading {
-    font-size: 36px;
-    margin: 0;
-    line-height: 36px;
-    font-weight: 500;
-}
-
-.section-top {
-    margin-bottom: 24px;
-    border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 24px;
-}
 .mobile {
     display: none;
 }
@@ -101,59 +67,11 @@ ul.slick-dots {
     padding: 0;
     margin: 0;
 }
-.breadcrumb-content>* {
-    font-size: 16px;
-    text-decoration: none;
-    color: rgb(var(--color-foreground));
-    line-height: 1.2;
-}
-
-.breadcrumb-content {
-    margin-bottom: 20px;
-}
-.product__title h1 {
-    font-size: 28px;
-    letter-spacing: normal;
-    font-weight: 500;
-}
-#cart-icon-bubble svg {
-    fill: #494949;
-    width: 3rem;
-}
-.facets__summary-label, 
-.facets__summary>div>span {
-    font-size: 15px;
-    letter-spacing: normal;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-#verticalTitle {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.footer-payment-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.accordion__content ul li {
-    list-style: disc;
-}
 @media only screen and (max-width:767px) {
     .btn {
         height: 44px;
         padding: 0 35px;
         padding-top: 4px;
-    }
-    .section-heading {
-        font-size: 24px;
-        line-height: 26px;
-    }
-    .section-top {
-        padding-bottom: 10px;
-        margin-bottom: 15px;
     }
     .desk {
         display: none;

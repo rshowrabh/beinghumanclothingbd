@@ -16,7 +16,7 @@ function hero_slider() {
         autoplay: true,
         autoplaySpeed: 4000,
         arrows:true,
-        dots:false,
+        dots:true,
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
     }); 
