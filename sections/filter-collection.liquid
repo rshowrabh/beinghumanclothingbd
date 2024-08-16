@@ -1,3 +1,5 @@
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
 {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -20,7 +22,7 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <ul class="collection-list">
+        <ul class="collection-list slider-collections">
         {%- for collection in collections -%}
             <li
               class="collection-list__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -40,6 +42,12 @@
     </div>
   </div>
   
+  <script>
+    var arrow; 
+    window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
+</script>
+
+{{ 'slick.min.js' | asset_url | script_tag }}
   {% schema %}
   {
     "name": "Filter Collections",
