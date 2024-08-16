@@ -32,12 +32,12 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <span class="mixitup-control-active"  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
         {%- for block in section.blocks -%}
-            {% for collection in block.settings.collection %}
+            {% for collection in block.settings.collection | limit: 3 %}
             <div class="mix {{block.id}} collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
