@@ -368,7 +368,7 @@
     </script>
 
     {{ 'slick.min.js' | asset_url | script_tag }}
-    {{ 'mixitup.min.js' | asset_url | script_tag }}
+    <script src="{{ 'mixitup.min.js' | asset_url }}" defer="defer"></script>
     <script>
       var arrow; 
       window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
