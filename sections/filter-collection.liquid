@@ -39,8 +39,7 @@
             {% endfor %}
         </div>
         <ul class="collection-list">
-        {%- for block in section.blocks.settings.collection_list -%}
-            <p>{{block}}</p>
+        {%- for block in section.blocks -%}
             <li class="collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: block.settings.collection,
@@ -101,9 +100,9 @@
           "default": "Men"
           },
           {
-          "type": "collection_list",
-          "id": "collection_list",
-          "label": "Collection"
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
           }
   ]
  }
