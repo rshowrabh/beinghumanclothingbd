@@ -39,7 +39,7 @@
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
-            <p>{{block.settings.collection.url}}</p>
+            <p>{{block.settings.collection}}</p>
             <li class="collection-list__item">
               {% render 'card-collection',
                 card_collection: block.settings.collection
@@ -94,7 +94,7 @@
     "settings": [
           {
           "type": "collection",
-          "id": "image",
+          "id": "collection",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
           }
   ]
