@@ -47,8 +47,8 @@
     margin: 0px;
 }
 .offer-details p {
-    border-top: 1px solid #000;
-    margin-bottom: 30px;
+    border: 1px solid #000;
+    padding: 5px 0px;
 }
 
 .special-offer {
@@ -90,17 +90,7 @@
   <div class="section-{{ section.id }}-padding page-width">
      <!-- Main container for the offer section -->
      <div class="offer-section">
-        
-      <!-- Offer details container -->
-      <div class="offer-details">
-          <div class="special-offer">Popular</div>
-          <h1>{{ section.settings.heading }}</h1>
-          <hr>
-          <p>{{ section.settings.subtext }}</p>
-          <!-- Call to action button -->
-          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
-      </div>
-      <!-- Image container -->
+        <!-- Image container -->
       <div class="image-container">
         {% if section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url }}" alt="">
@@ -108,13 +98,24 @@
           <img src="{{'banner.jpg '| asset_url}}" alt="">
         {% endif %}
       </div>
+      <!-- Offer details container -->
+      <div class="offer-details">
+          <div class="special-offer">Things We Love</div>
+          <h1>{{ section.settings.heading }}</h1>
+          <hr>
+          <p>{{ section.settings.subtext }}</p>
+          <!-- Call to action button -->
+          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
+          <a href="{{section.settings.button_link2}}" class="btn primary-btn">{{section.settings.button_label2}}</a>
+      </div>
+      
   </div>
   </div>
 </div>
 
 {% schema %}
 {
-"name": "Popular Section",
+"name": "Season Sale Section",
 "tag": "section",
 "class": "section",
   "settings": [
@@ -125,21 +126,15 @@
     },
     {
     "type": "text",
-    "id": "offer",
-    "label": "Select Offer",
-    "default": "-20%"
-    },
-    {
-    "type": "text",
     "id": "heading",
     "label": "Heading",
-    "default": "JEANS FITS"
+    "default": "Season Sale"
     },
     {
     "type": "text",
     "id": "subtext",
     "label": "Sub Text",
-    "default": "Explore our premium quality denim range to upgrade your everyday look"
+    "default": "upto 50% off"
     },
     {
     "type": "text",
@@ -151,6 +146,17 @@
     "type": "url",
     "id": "button_link",
     "label": "Button Link"
+    },
+    {
+    "type": "text",
+    "id": "button_label2",
+    "label": "Button Label2",
+    "default": "Explore Now"
+    },
+    {
+    "type": "url",
+    "id": "button_link2",
+    "label": "Button Link 2"
     },
     {
     "type": "color_scheme",
@@ -186,7 +192,7 @@
 
 "presets": [
     {
-    "name": "Popular Name"
+    "name": "Season Sale Section"
     }
 ]
 }
