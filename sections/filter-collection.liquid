@@ -3,6 +3,26 @@
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
+    ul.collection-list{
+        display: flex;
+        gap: 15px;
+    }
+    ul li{
+        list-style: none;
+    }
+    .heading{
+        height:100px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .heading span{
+        padding:10px 50px;
+        display: inline-block;
+        color:#fff;
+        background:#000;
+    }
   
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
@@ -82,43 +102,16 @@
   .tabset {
     margin: auto;
   }
-  ul.collection-list{
-        display: flex;
-        gap: 15px;
-    }
-    ul li{
-        list-style: none;
-    }
-    .heading{
-        height:100px;
-        width:100%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    .heading label{
-        padding:10px 50px;
-        display: inline-block;
-        color:#fff;
-        background:#000;
-    }
   </style>
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
-    <div class="section-{{ section.id }}-padding page-width tabset">
+    <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <input
-                type="radio"
-                name="tabset"
-                id="{{ block.id }}"
-                aria-controls="{{ block.id }}"
-                checked>
-            <label for="{{ block.id }}">{{block.settings.title}}</label>
+            <span>{{block.settings.title}}</span>
             {% endfor %}
         </div>
-        <ul class="collection-list tab-panels">
+        <ul class="collection-list">
         {%- for block in section.blocks -%}
-            <div id="{{ block.id }}" class="tab-panel">
             {% for collection in block.settings.collection %}
             <li class="collection-list__item grid__item">
                 {% render 'card-collection',
@@ -127,7 +120,6 @@
         %}
           </li>
           {%- endfor -%}
-          </div>
           {%- endfor -%}
           </ul>
     </div>
