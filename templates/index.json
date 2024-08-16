@@ -190,6 +190,42 @@
     },
     "shop_all_section_pRUHMU": {
       "type": "shop-all-section",
+      "blocks": {
+        "column_UMU3jj": {
+          "type": "column",
+          "settings": {
+            "button_label": "Demo",
+            "button_link": ""
+          }
+        },
+        "column_7UAHDH": {
+          "type": "column",
+          "settings": {
+            "button_label": "Demo",
+            "button_link": ""
+          }
+        },
+        "column_qxyVGk": {
+          "type": "column",
+          "settings": {
+            "button_label": "Demo",
+            "button_link": ""
+          }
+        },
+        "column_WyNzbV": {
+          "type": "column",
+          "settings": {
+            "button_label": "Demo",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UMU3jj",
+        "column_7UAHDH",
+        "column_qxyVGk",
+        "column_WyNzbV"
+      ],
       "settings": {
         "offer": "-20%",
         "heading": "JEANS FITS",
