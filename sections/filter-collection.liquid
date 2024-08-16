@@ -39,17 +39,15 @@
             {% endfor %}
         </div>
         <ul class="collection-list">
-        {%- for block in section.blocks -%}
-          <div class="{{  block.id }}">
+        {%- for block in section.blocks -%}=
             {% for collection in block.settings.collection %}
-            <li class="collection-list__item grid__item">
+            <li class="{{block.id}} collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
         %}
           </li>
           {%- endfor -%}
-          </div>
           {%- endfor -%}
           </ul>
     </div>
