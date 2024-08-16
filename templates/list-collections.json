@@ -77,10 +77,10 @@
         "tab_YCJCTU"
       ],
       "settings": {
-        "heading": "Write Heading",
-        "button": "Shop All",
+        "heading": "",
+        "button": "",
         "link": "",
-        "make_grid": false,
+        "make_grid": true,
         "product_limit": 8,
         "color_scheme": ""
       }
