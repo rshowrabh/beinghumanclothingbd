@@ -32,19 +32,12 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <button type="button" class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</button>
+            <button type="button" class="control" data-filter=".{{block.id}}">{{block.settings.title}}</button>
             {% endfor %}
         </div>
         <div class="collection-list">
         {%- for block in section.blocks -%}
-            {% for collection in block.settings.collection %}
-            <div class="mix {{block.id}} collection-list__item grid__item">
-                {% render 'card-collection',
-                card_collection: collection,
-                columns: 3
-        %}
-          </div>
-          {%- endfor -%}
+            <p class="mix {{block.id}}">non </p>
           {%- endfor -%}
           </div>
     </div>
