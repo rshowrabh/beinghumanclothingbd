@@ -85,13 +85,14 @@
     display: none;
 }
 .slick-dots {
+    position: absolute;
     bottom: 30px;
 }
 
 .slick-dots li {
     background-color: #757575;
-    width: 5px;
-    height: 5px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     cursor: pointer;
     transition: .1s all linear;
