@@ -41,9 +41,7 @@
         {%- for collection in section.blocks -%}
             <li class="collection-list__item">
               {% render 'card-collection',
-                card_collection: collection,
-                media_aspect_ratio: section.settings.image_ratio,
-                columns: 3
+                card_collection: collection
               %}
             </li>
           {%- endfor -%}
@@ -94,7 +92,7 @@
     "name": "Add Blocks",
     "settings": [
           {
-          "type": "collection_list",
+          "type": "collection",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
           }
