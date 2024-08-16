@@ -39,6 +39,7 @@
         </div>
         <ul class="collection-list">
         {%- for collection in section.blocks -%}
+            <p>{{collection}}</p>
             <li class="collection-list__item">
               {% render 'card-collection',
                 card_collection: collection
