@@ -86,6 +86,15 @@
   <div class="section-{{ section.id }}-padding page-width">
      <!-- Main container for the offer section -->
      <div class="offer-section">
+      <!-- Offer details container -->
+      <div class="offer-details">
+        <div class="special-offer">Popular</div>
+        <h1>{{ section.settings.heading }}</h1>
+        <hr>
+        <p>{{ section.settings.subtext }}</p>
+        <!-- Call to action button -->
+        <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
+    </div>
       <!-- Image container -->
       <div class="image-container">
         {% if section.settings.image != blank %}
@@ -93,15 +102,6 @@
         {% else %}
           <img src="{{'banner.jpg '| asset_url}}" alt="">
         {% endif %}
-      </div>
-      <!-- Offer details container -->
-      <div class="offer-details">
-          <div class="special-offer">Popular</div>
-          <h1>{{ section.settings.heading }}</h1>
-          <br>
-          <p>{{ section.settings.subtext }}</p>
-          <!-- Call to action button -->
-          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
       </div>
   </div>
   </div>
