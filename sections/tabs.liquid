@@ -1,0 +1,132 @@
+<style>
+  .tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+  }
+
+  .tabset .tab-panel {
+    display: none;
+  }
+
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+  }
+
+
+  .tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+  }
+
+  input:focus-visible + label {
+    outline: 2px solid rgba(var(--color-button), var(--alpha-button-background));
+    border-radius: 3px;
+  }
+
+  .tabset > label:hover,
+  .tabset > input:focus + label,
+  .tabset > input:checked + label {
+    color: rgba(var(--color-button), var(--alpha-button-background));
+  }
+
+  .tabset > label:hover::after,
+  .tabset > input:focus + label::after,
+  .tabset > input:checked + label::after {
+    background: rgba(var(--color-button), var(--alpha-button-background));
+  }
+
+  .tabset > input:checked + label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+  }
+
+  .tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .tabset {
+    margin: auto;
+  }
+</style>
+
+<section class="color-{{ section.settings.color_scheme }} gradient page-width page-margin">
+  <div class="tabset">
+    {% for block in section.blocks %}
+      <input
+        type="radio"
+        name="tabset"
+        id="{{ block.id }}"
+        aria-controls="{{ block.id }}"
+        checked>
+      <label for="{{ block.id }}">{{ block.settings.heading | escape }}</label>
+    {% endfor %}
+    <div class="tab-panels">
+      {% for block in section.blocks %}
+        <section id="{{ block.id }}" class="tab-panel">
+          <p>{{ block.settings.text }}</p>
+        </section>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</section>
+{% schema %}
+  {
+    "name": "tabs",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Tabs",
+        "type": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Text",
+            "default": "Description"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Input Text",
+            "default": "<p>This is product decription </p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabs"
+      }
+    ]
+  }
+{% endschema %}

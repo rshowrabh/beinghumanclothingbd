@@ -32,88 +32,64 @@
     }
   {%- endstyle -%}
   <style>
-    .tabset > input[type="radio"] {
-    position: absolute;
-    left: -200vw;
-  }
+   .tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
 
-  .tabset .tab-panel {
-    display: none;
-  }
-
-  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-    display: block;
-  }
-
-
-  .tabset > label {
-    position: relative;
-    display: inline-block;
-    padding: 15px 15px 25px;
-    border: 1px solid transparent;
-    border-bottom: 0;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .tabset > label::after {
-    content: "";
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    width: 22px;
-    height: 4px;
-    background: #8d8d8d;
-  }
-
-  input:focus-visible + label {
-    outline: 2px solid rgba(var(--color-button), var(--alpha-button-background));
-    border-radius: 3px;
-  }
-
-  .tabset > label:hover,
-  .tabset > input:focus + label,
-  .tabset > input:checked + label {
-    color: rgba(var(--color-button), var(--alpha-button-background));
-  }
-
-  .tabset > label:hover::after,
-  .tabset > input:focus + label::after,
-  .tabset > input:checked + label::after {
-    background: rgba(var(--color-button), var(--alpha-button-background));
-  }
-
-  .tabset > input:checked + label {
-    border-color: #ccc;
-    border-bottom: 1px solid #fff;
-    margin-bottom: -1px;
-  }
-
-  .tab-panel {
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
-  }
-
-  .tabset {
-    margin: auto;
-  }
+#one:checked ~ .tabs #one-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
   </style>
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <span>{{block.settings.title}}</span>
+            <label class="tab" id="one" for="{{block.id}}">{{block.settings.title}}</label>
             {% endfor %}
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <li class="collection-list__item grid__item">
+            <li id="one-panel" class="panel collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
