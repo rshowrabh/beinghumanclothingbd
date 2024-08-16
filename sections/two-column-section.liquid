@@ -7,6 +7,13 @@
         overflow: hidden;
         text-align:center;
     }
+    .section-two-column image img{
+        height: inherit;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transition: 0.5s all ease-in-out; 
+    }
   
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
