@@ -15,7 +15,7 @@
         {%- assign collection_image = blank -%}
       {%- endif -%}
 
-      <a href="{{ collection.url }}" data-filer="metafields.custom.type">
+      <a href="{{ collection.url }}" data-filer="{{collection.metafields.type}}">
         <img src="{{ collection_image | img_url: '480x' }}" alt="">
         {{ collection.title }}
       </a>
