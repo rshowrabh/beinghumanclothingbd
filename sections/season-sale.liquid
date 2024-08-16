@@ -46,11 +46,12 @@
 .offer-details > * {
     margin: 0px;
 }
-.offer-details p {
+#season_sale .offer-details p {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 10px 0px;
     margin: 20px 0px;
+    width: 100%;
 }
 
 .special-offer {
@@ -88,7 +89,7 @@
   }
 </style>
 
-<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+<div id="season_sale" class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
      <!-- Main container for the offer section -->
      <div class="offer-section">
@@ -107,7 +108,7 @@
           <hr>
           <p>{{ section.settings.subtext }}</p>
           <!-- Call to action button -->
-          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
+          <a href="{{section.settings.button_link}}" class="btn primary-btn mb-1">{{section.settings.button_label}}</a>
           <a href="{{section.settings.button_link2}}" class="btn primary-btn">{{section.settings.button_label2}}</a>
       </div>
       
