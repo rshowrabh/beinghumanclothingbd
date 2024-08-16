@@ -3,10 +3,8 @@
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
-
-    .collection_list{
-      display: flex;
-      gap: 15px;
+    .mix{
+      width: calc(30% - 5px)
     }
 
     .heading{
@@ -34,10 +32,10 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <span  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span class="mixitup-control-active"  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
-        <div class="collection_list">
+        <div class="collection_list d-flex">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
             <div class="mix {{block.id}} collection-list__item grid__item">
