@@ -1,0 +1,31 @@
+{%- for block in section.blocks -%}
+    {%- case block.type -%}
+    {%- when 'margin_padding' -%}
+    {% style %} 
+      #section_{{ section.id }} {
+        margin-top: {{ block.settings.mt }}px;
+        margin-bottom: {{ block.settings.mb }}px;
+        padding-top: {{ block.settings.pt }}px;
+        padding-bottom: {{ block.settings.pb }}px;
+      }
+    
+      @media (max-width: 1200px) {
+        #section_{{ section.id }} {
+          margin-top: {{ block.settings.mt_lg }}px;
+          margin-bottom: {{ block.settings.mb_lg }}px;
+          padding-top: {{ block.settings.pt_lg }}px;
+          padding-bottom: {{ block.settings.pb_lg }}px;
+        } 
+      }
+    
+      @media (max-width: 767px) {
+       #section_{{ section.id }} {
+          margin-top: {{ block.settings.mt_md }}px;
+          margin-bottom: {{ block.settings.mb_md }}px;
+          padding-top: {{ block.settings.pt_md }}px;
+          padding-bottom: {{ block.settings.pb_md }}px;
+        }  
+      } 
+      {% endstyle %} 
+    {%- endcase -%}
+    {%- endfor -%}

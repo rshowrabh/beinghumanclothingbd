@@ -1,0 +1,230 @@
+{{'product-tab.css' |  asset_url | stylesheet_tag:preload:true }}
+{{'product-card.css' |  asset_url | stylesheet_tag:preload:true }}
+
+{%- liquid
+  assign s = section.settings
+  assign heading = s.heading
+  assign button = s.button
+  assign link = s.link
+  assign make_grid = s.make_grid
+  assign limit = s.product_limit
+-%}
+
+<div class="product-tab color-{{ section.settings.color_scheme }} gradient section_{{ section.id }}" id="section_{{ section.id }}">
+    <div class="product-tab-wrap">
+        <div class="product-tab-top">
+            <div class="product-tab-heading">
+                <h3 class="section-heading">
+                    {{heading}}
+                </h3>
+            </div>
+
+            <div class="product-tab-item-wrap">
+                <ul class="product-tab-items">
+                    {%- assign tab_items = section.blocks |  where: "type","tab"  -%}
+                    {% for block in tab_items %}
+                        {%- liquid
+                            assign b = block.settings
+                            assign tab_heading = b.tab_heading
+                            assign loop = forloop.index
+                        -%}    
+                        <li class="product-tab-item {% if loop == 1 %} active{% endif %}" data-id="{{block.id}}_{{loop}}">
+                            {{tab_heading}}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="product-tab-button desk">
+                <a href="{{link}}" class="btn seconday-btn product-tab-btn">{{button}}</a>
+            </div>
+        </div>
+        <div class="product-tab-contents"> 
+            {%- assign tab_items = section.blocks |  where: "type","tab"  -%}
+            {% for block in tab_items %}
+                {%- liquid
+                    assign b = block.settings
+                    assign collection = b.collection 
+                    assign loop = forloop.index
+                -%} 
+                <div class="product-tab-content {% if loop == 1 %} show{% endif %}" id="tab_{{block.id}}_{{loop}}">
+                    <div class="{% if make_grid %}product-contents-grid{% else %}product-contents-slider{% endif %}">
+                        {% for product in collection.products limit: limit %}
+                            {%- render 'card-product', product: product -%}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="product-tab-button mobile">
+            <a href="{{link}}" class="btn seconday-btn product-tab-btn">{{button}}</a>
+        </div>
+    </div>
+</div>
+{%- render 'section-css', block: block -%}
+{% schema %}
+    {
+        "name": "Product Tab",
+        "settings": [
+            {
+                "type" : "textarea",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Write Heading"
+            },
+            {
+                "type" : "text",
+                "id": "button",
+                "label": "Button",
+                "default": "Shop All"
+            },
+            {
+                "type" : "url",
+                "id": "link",
+                "label": "Link"
+            },
+            {
+                "type" : "checkbox",
+                "id": "make_grid",
+                "label": "Make Grid",
+                "default": false
+            },
+            {
+                "type" : "range",
+                "id": "product_limit",
+                "label": "Product Limit",
+                "min": 4,
+                "max": 16,
+                "step": 4,
+                "default": 8
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "label": "Color Scheme",
+                "default": "accent-1"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Tab",
+                "type": "tab",
+                "limit": 8,
+                "settings": [
+                    {
+                        "type" : "text",
+                        "id": "tab_heading",
+                        "label": "Tab Heading",
+                        "default": "All Products"
+                    },
+                    {
+                        "type" : "collection",
+                        "id": "collection",
+                        "label": "Collection"
+                    }
+                ]
+            },
+            {
+                "type": "margin_padding",
+                "name": "margin-padding",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "header",
+                        "content": "Margin Top",
+                        "info": "Unit: pixel (px)"
+                    },
+                    {
+                        "type": "number",
+                        "id": "mt",
+                        "label": "Margin top - desktop",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "mt_lg",
+                        "label": "Margin top - tablet",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "mt_md",
+                        "label": "Margin top - mobile",
+                        "default": 0
+                    },
+                    {
+                        "type": "header",
+                        "content": "Margin Bottom",
+                        "info": "Unit: pixel (px)"
+                    },
+                    {
+                        "type": "number",
+                        "id": "mb",
+                        "label": "Margin bottom - desktop",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "mb_lg",
+                        "label": "Margin bottom - tablet",
+                        "default": 0
+                    },
+                    {
+                        "type": "number",
+                        "id": "mb_md",
+                        "label": "Margin bottom - mobile",
+                        "default": 0
+                    },
+                    {
+                        "type": "header",
+                        "content": "Padding Top",
+                        "info": "Unit: pixel (px)"
+                    },
+                    {
+                        "type": "number",
+                        "id": "pt",
+                        "label": "Padding top - desktop",
+                        "default": 40
+                    },
+                    {
+                        "type": "number",
+                        "id": "pt_lg",
+                        "label": "Padding top - tablet",
+                        "default": 40
+                    },
+                    {
+                        "type": "number",
+                        "id": "pt_md",
+                        "label": "Padding top - mobile",
+                        "default": 30
+                    },
+                    {
+                        "type": "header",
+                        "content": "Padding Bottom",
+                        "info": "Unit: pixel (px)"
+                    },
+                    {
+                        "type": "number",
+                        "id": "pb",
+                        "label": "Padding bottom - desktop",
+                        "default": 40
+                    },
+                    {
+                        "type": "number",
+                        "id": "pb_lg",
+                        "label": "Padding bottom - tablet",
+                        "default": 40
+                    },
+                    {
+                        "type": "number",
+                        "id": "pb_md",
+                        "label": "Padding bottom - mobile",
+                        "default": 30 
+                    }
+                ]
+            }
+        ],
+        "presets": [{
+            "name": "Product Tab"
+        }]
+    }
+{% endschema %}
