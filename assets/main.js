@@ -37,3 +37,12 @@ function collection_slider() {
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
     }); 
 }
+
+// product tabs
+$('.product-tab-item').on('click', function(){
+    var id = $(this).data('id');
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#tab_'+id).addClass('show').siblings().removeClass('show');
+    $('.product-contents-slider').slick('setPosition');
+    product_slider();
+})
