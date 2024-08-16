@@ -28,7 +28,8 @@
             "title": "Men",
             "collection": [
               "belts-for-men",
-              "frontpage"
+              "frontpage",
+              "women-jents"
             ]
           }
         },
@@ -38,7 +39,8 @@
             "title": "Women",
             "collection": [
               "frontpage",
-              "women-jents"
+              "women-jents",
+              "belts-for-men"
             ]
           }
         }
