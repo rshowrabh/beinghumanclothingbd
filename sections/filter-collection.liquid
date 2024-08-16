@@ -39,7 +39,7 @@
             {% endfor %}
         </div>
         <ul class="collection-list">
-        {%- for block in section.blocks.collection_list -%}
+        {%- for block in section.blocks.settings.collection_list -%}
             <p>{{block}}</p>
             <li class="collection-list__item grid__item">
                 {% render 'card-collection',
