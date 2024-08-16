@@ -27,7 +27,7 @@ function collection_slider() {
     $('.slider-collections').slick({ 
         speed:800,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 4000,
