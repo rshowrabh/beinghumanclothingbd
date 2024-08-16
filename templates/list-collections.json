@@ -22,10 +22,10 @@
     "filter_collection_gez4gY": {
       "type": "filter-collection",
       "settings": {
-        "title": "Multicolumn",
+        "title": "Filter Collection",
         "sort": "alphabetical",
         "image_ratio": "adapt",
-        "columns_desktop": 6,
+        "columns_desktop": 4,
         "columns_mobile": "1"
       }
     },
