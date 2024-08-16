@@ -35,7 +35,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <label data-filter="{{  block.id }}">{{block.settings.title}}</label>
+            <label data-filter=".{{  block.id }}">{{block.settings.title}}</label>
             {% endfor %}
         </div>
         <ul class="collection-list">
