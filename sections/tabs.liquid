@@ -106,14 +106,16 @@
     {% endfor %}
     <ul class="tab-panels collection-list">
       {% for block in section.blocks %}
+        <div id="{{block.id}}">
         {% for collection in block.settings.collection %}
-            <li id="{{  block.id}}" class="tab-panel collection-list__item grid__item">
+            <li class="tab-panel collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
         %}
           </li>
           {%- endfor -%}
+          </div>
      {%- endfor -%}
 
     </ul>
