@@ -47,50 +47,48 @@
         "column_YCTQ3p",
         "column_DhBgiP"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
-    "tabs_JMRkAY": {
-      "type": "tabs",
+    "product_tabs_eytVp4": {
+      "type": "product-tabs",
       "blocks": {
-        "column_Qh8Ra6": {
-          "type": "column",
+        "tab_p7e6m6": {
+          "type": "tab",
           "settings": {
-            "title": "Men",
-            "collection": [
-              "belts-for-men",
-              "frontpage"
-            ]
+            "tab_heading": "Men",
+            "collection": "women-jents"
           }
         },
-        "column_VPEbGe": {
-          "type": "column",
+        "tab_YCJCTU": {
+          "type": "tab",
           "settings": {
-            "title": "WoMen",
-            "collection": [
-              "women-jents",
-              "frontpage"
-            ]
+            "tab_heading": "Women",
+            "collection": "women-jents"
           }
         }
       },
       "block_order": [
-        "column_Qh8Ra6",
-        "column_VPEbGe"
+        "tab_p7e6m6",
+        "tab_YCJCTU"
       ],
       "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "heading": "Write Heading",
+        "button": "Shop All",
+        "link": "",
+        "make_grid": false,
+        "product_limit": 8,
+        "color_scheme": ""
       }
     }
   },
   "order": [
     "main",
     "filter_collection_UfgkCp",
-    "tabs_JMRkAY"
+    "product_tabs_eytVp4"
   ]
 }
