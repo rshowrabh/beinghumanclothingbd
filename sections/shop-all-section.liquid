@@ -93,11 +93,7 @@
       <!-- Offer details container -->
       <div class="offer-details">
         {% for block in section.blocks %}
-         {% if block != blank %}
           <a class="link_container" href="{{block.settings.button_url}}">{{block.settings.button_label}}</a>
-        {% else %}
-        <a class="link_container" href="#">BELTS</a>
-        {% endif %}
           {% endfor %}
           <!-- Call to action button -->
           <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
