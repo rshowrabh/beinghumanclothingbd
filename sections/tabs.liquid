@@ -18,16 +18,6 @@
   }
 
 
-  .tabset > label {
-    position: relative;
-    display: inline-block;
-    padding: 15px 15px 25px;
-    border: 1px solid transparent;
-    border-bottom: 0;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
   .tabset > label::after {
     content: "";
     position: absolute;
@@ -61,14 +51,6 @@
     margin-bottom: -1px;
   }
 
-  .tab-panel {
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
-  }
-
-  .tabset {
-    margin: auto;
-  }
   ul.collection-list{
         display: flex;
         gap: 15px;
@@ -83,7 +65,7 @@
         justify-content:center;
         align-items:center;
     }
-    .heading span{
+    .heading label{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -101,7 +83,7 @@
         id="{{ block.id }}"
         aria-controls="{{ block.id }}"
         checked>
-      <label for="{{ block.id }}">{{ block.settings.title}}</label>
+        <label for="{{ block.id }}">{{ block.settings.title}}</label>
       </div>
     {% endfor %}
     <ul class="tab-panels collection-list">
