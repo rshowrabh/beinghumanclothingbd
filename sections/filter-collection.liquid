@@ -38,11 +38,11 @@
             <span>Women</span>
         </div>
         <ul class="collection-list">
-        {%- for collection in section.blocks -%}
-            <p>{{collection}}</p>
+        {%- for block in section.blocks -%}
+            <p>{{block.collection.url}}</p>
             <li class="collection-list__item">
               {% render 'card-collection',
-                card_collection: collection
+                card_collection: block.collection
               %}
             </li>
           {%- endfor -%}
