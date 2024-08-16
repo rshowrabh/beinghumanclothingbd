@@ -366,8 +366,9 @@
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
     </script>
-    
+
     {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'mixitup.min.js' | asset_url | script_tag }}
     <script>
       var arrow; 
       window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
