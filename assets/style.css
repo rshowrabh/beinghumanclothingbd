@@ -26,7 +26,7 @@
     font-weight: 600;
     transition: 300ms;
 }
-.primary-btn {
+.primary-btn, .button {
     background: #14261C;
     color: #DC9A0E;
 }
