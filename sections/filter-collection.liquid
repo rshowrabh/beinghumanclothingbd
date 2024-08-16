@@ -4,8 +4,6 @@
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
     .collection-list{
-        display: flex;
-        gap: 15px;
     }
     .heading{
         height:100px;
@@ -30,31 +28,23 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-      <div class="controls">
-        <button type="button" class="control" data-filter="all">All</button>
-        <button type="button" class="control" data-filter=".green">Green</button>
-        <button type="button" class="control" data-filter=".blue">Blue</button>
-        <button type="button" class="control" data-filter=".pink">Pink</button>
-        <button type="button" class="control" data-filter="none">None</button>
-
-        <button type="button" class="control" data-sort="default:asc">Asc</button>
-        <button type="button" class="control" data-sort="default:desc">Desc</button>
-    </div>
-
-    <div class="collection-list">
-        <div class="mix green">G</div>
-        <div class="mix green">GA</div>
-        <div class="mix blue">B</div>
-        <div class="mix pink">P</div>
-        <div class="mix green">G</div>
-        <div class="mix blue">B</div>
-        <div class="mix pink">P</div>
-        <div class="mix blue">B</div>
-
-        <div class="gap"></div>
-        <div class="gap"></div>
-        <div class="gap"></div>
-    </div>
+        <div class="heading controls">
+            {%- for block in section.blocks -%}
+            <button type="button" class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</button>
+            {% endfor %}
+        </div>
+        <div class="collection-list">
+        {%- for block in section.blocks -%}
+            {% for collection in block.settings.collection %}
+            <div class="mix {{block.id}} collection-list__item grid__item">
+                {% render 'card-collection',
+                card_collection: collection,
+                columns: 3
+        %}
+          </div>
+          {%- endfor -%}
+          {%- endfor -%}
+          </div>
     </div>
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
