@@ -58,14 +58,11 @@
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-    var E = document.querySelector('.collection_list');
-    var mixer = mixitup({
-    showOnLoad : 'icon', // <----- This property
-    targetSelector: E,
-    filterSelector: '.man',
-    effects: ['fade'],
-    easing: 'snap',
-    }); 
+   var mixer = mixitup('.collection_list', {
+    controls: {
+        toggleDefault: 'none'
+    }
+});
 </script>
   {% schema %}
   {
