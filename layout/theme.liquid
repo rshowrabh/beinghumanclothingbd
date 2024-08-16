@@ -366,6 +366,10 @@
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
     </script>
+    <script>
+      var arrow; 
+      window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
+  </script>
 
     {{ 'main.js' | asset_url | script_tag }}
 
