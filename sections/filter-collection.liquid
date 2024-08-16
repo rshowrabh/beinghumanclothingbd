@@ -3,12 +3,9 @@
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
-    ul.collection-list{
+    .collection-list{
         display: flex;
         gap: 15px;
-    }
-    ul li{
-        list-style: none;
     }
     .heading{
         height:100px;
@@ -38,18 +35,18 @@
             <label class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</label>
             {% endfor %}
         </div>
-        <ul class="collection-list">
+        <div class="collection-list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <li class="mix {{block.id}} collection-list__item grid__item">
+            <div class="mix {{block.id}} collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
         %}
-          </li>
+          </div>
           {%- endfor -%}
           {%- endfor -%}
-          </ul>
+          </div>
     </div>
   </div>
   {{ 'mixitup.min.js' | asset_url | script_tag }}
