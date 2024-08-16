@@ -7,6 +7,9 @@
     --font-weight-bold : 700;
     --font-weight-normal : 400;
 }
+body{
+    font-family: "Montserrat", Sans-serif;
+}
 .d-flex{
     display: flex;
     justify-content: flex-start;
@@ -17,8 +20,8 @@
     width: 100%;
 }
 .btn {
-    padding: 15px 50px;
-    border-radius: 5px;
+    padding: 9px 130px;
+    border-radius: 1px;
     text-decoration: none;
     justify-content: center;
     text-transform: uppercase;
