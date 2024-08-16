@@ -17,7 +17,7 @@
         justify-content:center;
         align-items:center;
     }
-    .heading span{
+    .heading label{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -35,11 +35,12 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <label>{{block.settings.title}}</label>
+            <label data-filter="{{  block.id }}">{{block.settings.title}}</label>
             {% endfor %}
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
+          <div class="{{  block.id }}">
             {% for collection in block.settings.collection %}
             <li class="collection-list__item grid__item">
                 {% render 'card-collection',
@@ -48,10 +49,17 @@
         %}
           </li>
           {%- endfor -%}
+          </div>
           {%- endfor -%}
           </ul>
     </div>
   </div>
+  {{ 'mixitup.min.js' | asset_url | script_tag }}
+  <script>
+    var containerEl = document.querySelector('.collection-list');
+
+    var mixer = mixitup(containerEl);
+</script>
   {% schema %}
   {
     "name": "Filter Collections",
