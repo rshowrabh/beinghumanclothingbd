@@ -41,10 +41,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .offer-details > * {
     margin: 0px;
+}
+.offer-details h1 {
+    border-bottom: 1px solid #000;
 }
 
 .special-offer {
@@ -90,7 +93,6 @@
       <div class="offer-details">
         <div class="special-offer">Popular</div>
         <h1>{{ section.settings.heading }}</h1>
-        <hr>
         <p>{{ section.settings.subtext }}</p>
         <!-- Call to action button -->
         <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
