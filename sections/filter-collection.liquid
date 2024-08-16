@@ -1,7 +1,7 @@
 <h1>{{ page_title }}</h1>
 
 <ul>
-  {%- for collection in collections  | where: 'metafields.custom.type', '1'  -%}
+  {%- for collection in collections  -%}
     <li>
       <!--
         These control flow tags check to see if there is a featured image for a collection.
@@ -15,7 +15,7 @@
         {%- assign collection_image = blank -%}
       {%- endif -%}
 
-      <a href="{{ collection.url }}">
+      <a href="{{ collection.url }}" data-filer="metafields.custom.type">
         <img src="{{ collection_image | img_url: '480x' }}" alt="">
         {{ collection.title }}
       </a>
