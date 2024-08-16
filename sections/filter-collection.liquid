@@ -38,9 +38,9 @@
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
+          <span  data-filter="all">All</span>
             {%- for block in section.blocks -%}
-              <p>{{forloop.first}}</p>
-            <span class="{% if forloop.last === true %}mixitup-control-active{% endif %}" data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
