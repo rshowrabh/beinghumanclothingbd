@@ -16,23 +16,24 @@
     /* Offer section styling */
 .offer-section {
     display: flex;
-    align-items: normal;
-    justify-content: center;
+    align-items:flex-start;
+    justify-content:flex-start;
     gap: 30px;
-    background-color: rgb(var(--color-background));
-    color: rgb(var(--color-foreground));
+    background-color:transparent;
 }
 
 /* Image container styling */
 #shop_all .image-container {
-    flex: 1;
-    display: flex;
-    max-width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100vh;
 }
 
-.image-container img {
+#shop_all .image-container img {
     width: 100%;
     border-radius: 4px;
+    object-fit: contain;
 }
 
 /* Offer details styling */
@@ -90,8 +91,7 @@
 <div id="shop_all" class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
      <!-- Main container for the offer section -->
-     <div class="offer-section">
-        
+     <div class="offer-section">     
       <!-- Offer details container -->
       <div class="offer-details">
           <a class="link_container" href="#">BELTS</a>
