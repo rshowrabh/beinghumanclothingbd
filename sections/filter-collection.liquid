@@ -33,7 +33,7 @@
             <button type="button" class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</button>
             {% endfor %}
         </div>
-        <div class="collection-list">
+        <div class="collection_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
             <div class="mix {{block.id}} collection-list__item grid__item">
@@ -49,8 +49,7 @@
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-    var containerEl = document.querySelector('.collection-list');
-    var mixer = mixitup(containerEl);
+   var mixer = mixitup('.collection_list');
 </script>
   {% schema %}
   {
