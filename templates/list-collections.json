@@ -22,32 +22,28 @@
     "filter_collection_UfgkCp": {
       "type": "filter-collection",
       "blocks": {
-        "collection_list_qrzM6F": {
-          "type": "collection_list",
+        "column_j9Kthn": {
+          "type": "column",
           "settings": {
-            "button_label": "Shop For",
-            "button_link": ""
+            "image": [
+              "women-jents",
+              "frontpage"
+            ]
           }
         },
-        "collection_list_ekGHq9": {
-          "type": "collection_list",
+        "column_JMeHCe": {
+          "type": "column",
           "settings": {
-            "button_label": "Shop For",
-            "button_link": ""
-          }
-        },
-        "collection_list_NHLV6x": {
-          "type": "collection_list",
-          "settings": {
-            "button_label": "Shop For",
-            "button_link": ""
+            "image": [
+              "belts-for-men",
+              "women-jents"
+            ]
           }
         }
       },
       "block_order": [
-        "collection_list_qrzM6F",
-        "collection_list_ekGHq9",
-        "collection_list_NHLV6x"
+        "column_j9Kthn",
+        "column_JMeHCe"
       ],
       "settings": {
         "color_scheme": "",
