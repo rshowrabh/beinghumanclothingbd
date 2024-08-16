@@ -34,39 +34,6 @@
     display: none;
 }
 
-
-.slick-dots button {
-    display: none;
-}
-
-.slick-dots {
-    bottom: 15px;
-}
-
-.slick-dots li {
-    background: #898989;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 3px;
-    cursor: pointer;
-}
-
-.slick-dots .slick-active {
-    background: #fff;
-}
-
-.slider-items.slick-initialized.slick-slider.slick-dotted {
-    margin-bottom: 0;
-}
-ul.slick-dots {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
 @media only screen and (max-width:767px) {
     .btn {
         height: 44px;
