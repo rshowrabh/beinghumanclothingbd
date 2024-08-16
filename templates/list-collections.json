@@ -26,9 +26,9 @@
           "type": "column",
           "settings": {
             "title": "Men",
-            "collection": [
-              "belts-for-men",
+            "collection_list": [
               "frontpage",
+              "belts-for-men",
               "women-jents"
             ]
           }
@@ -37,7 +37,9 @@
           "type": "column",
           "settings": {
             "title": "Women",
-            "collection": [
+            "collection_list": [
+              "belts-for-men",
+              "frontpage",
               "women-jents"
             ]
           }
