@@ -157,10 +157,3 @@
     {%- endif -%}
   </div>
 </div>
-
-{% assign filteredCollections = collections.all | where: 'metafields.custom.type', '1' %}
-
-{% for collection in filteredCollections %}
-  <h2>{{ collection.title }}</h2>
-  <!-- Display other collection information here -->
-{% endfor %}
