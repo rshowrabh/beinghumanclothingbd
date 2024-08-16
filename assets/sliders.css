@@ -71,11 +71,8 @@
     left: initial;
 }
 
-.arrow-prev.slick-arrow img {
-    transform: rotate(90deg);
-}
 .arrow-next.slick-arrow img {
-    transform: rotate(270deg);
+    transform: rotate(180deg);
 }
 
 /* slick slider dots  */
