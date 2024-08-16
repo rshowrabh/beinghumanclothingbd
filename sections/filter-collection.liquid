@@ -39,11 +39,13 @@
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
-            <li class="collection-list__item">
-              {% render 'card-collection',
-                card_collection: block.settings.collection
-              %}
-            </li>
+            <li class="collection-list__item grid__item">
+        {% render 'card-collection',
+          card_collection: collection,
+          media_aspect_ratio: section.settings.image_ratio,
+          columns: 3
+        %}
+          </li>
           {%- endfor -%}
           </ul>
     </div>
