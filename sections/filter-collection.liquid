@@ -30,21 +30,36 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="heading controls">
-            {%- for block in section.blocks -%}
-            <button type="button" class="control" data-filter=".{{block.id}}">{{block.settings.title}}</button>
-            {% endfor %}
-        </div>
-        <div class="collection-list">
-        {%- for block in section.blocks -%}
-            <p class="mix {{block.id}}">{{block.id}} </p>
-          {%- endfor -%}
-          </div>
+      <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".green">Green</button>
+        <button type="button" class="control" data-filter=".blue">Blue</button>
+        <button type="button" class="control" data-filter=".pink">Pink</button>
+        <button type="button" class="control" data-filter="none">None</button>
+
+        <button type="button" class="control" data-sort="default:asc">Asc</button>
+        <button type="button" class="control" data-sort="default:desc">Desc</button>
+    </div>
+
+    <div class="container">
+        <div class="mix green">G</div>
+        <div class="mix green">GA</div>
+        <div class="mix blue">B</div>
+        <div class="mix pink">P</div>
+        <div class="mix green">G</div>
+        <div class="mix blue">B</div>
+        <div class="mix pink">P</div>
+        <div class="mix blue">B</div>
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+    </div>
     </div>
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-    var containerEl = document.querySelector('.collection-list');
+    var containerEl = document.querySelector('.container');
     var mixer = mixitup(containerEl);
 </script>
   {% schema %}
