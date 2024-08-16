@@ -49,10 +49,10 @@
           </div>
     </div>
   </div>
-  <script src="{{ 'mixitup.min.js' | asset_url }}" defer="defer"></script>
+  {{ 'mixitup.min.js' | asset_url | script_tag  }}
+  {% comment %} <script src="{{ 'mixitup.min.js' | asset_url }}" defer="defer"></script> {% endcomment %}
   <script>
     var containerEl = document.querySelector('.collection-list');
-
     var mixer = mixitup(containerEl);
 </script>
   {% schema %}
