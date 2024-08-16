@@ -127,6 +127,30 @@
     },
     "two_column_section_KTKXnP": {
       "type": "two-column-section",
+      "blocks": {
+        "column_rj7bUk": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_YaJQf8": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rj7bUk",
+        "column_YaJQf8"
+      ],
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
