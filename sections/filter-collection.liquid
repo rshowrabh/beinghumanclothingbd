@@ -40,7 +40,7 @@
         <div class="collection_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <div class="{{block.id}} collection-list__item grid__item">
+            <div class="mix {{block.id}} collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
