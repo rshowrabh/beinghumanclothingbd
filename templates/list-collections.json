@@ -21,12 +21,38 @@
     },
     "filter_collection_UfgkCp": {
       "type": "filter-collection",
+      "blocks": {
+        "collection_list_qrzM6F": {
+          "type": "collection_list",
+          "settings": {
+            "button_label": "Shop For",
+            "button_link": ""
+          }
+        },
+        "collection_list_ekGHq9": {
+          "type": "collection_list",
+          "settings": {
+            "button_label": "Shop For",
+            "button_link": ""
+          }
+        },
+        "collection_list_NHLV6x": {
+          "type": "collection_list",
+          "settings": {
+            "button_label": "Shop For",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_list_qrzM6F",
+        "collection_list_ekGHq9",
+        "collection_list_NHLV6x"
+      ],
       "settings": {
-        "title": "Filter Collections",
-        "sort": "alphabetical",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "columns_mobile": "2"
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
