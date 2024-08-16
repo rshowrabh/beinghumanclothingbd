@@ -30,6 +30,7 @@ body{
     font-weight: 600;
     transition: 300ms;
     display: inline-block;
+    text-wrap: nowrap;
 }
 .primary-btn, .button {
     background: #14261C;
