@@ -54,13 +54,6 @@
     letter-spacing: .1em;
 }
 
-.discount {
-    background-color: rgb(var(--color-button));
-    color: rgb(var(--color-button-text));
-    padding: 0 5px;
-    border-radius: 4px;
-}
-
 /* Countdown timer styling */
 .countdown {
     display: flex;
@@ -103,12 +96,12 @@
       </div>
       <!-- Offer details container -->
       <div class="offer-details">
-          <div class="special-offer">SPECIAL OFFER <span class="discount">{{ section.settings.offer }}</span>
-          </div>
+          <div class="special-offer">Popular</div>
           <h1>{{ section.settings.heading }}</h1>
+          <br>
           <p>{{ section.settings.subtext }}</p>
           <!-- Call to action button -->
-          <a href="{{section.settings.button_link}}" class="btn btn-primary mt-20">{{section.settings.button_label}}</a>
+          <a href="{{section.settings.button_link}}" class="btn primary-btn">{{section.settings.button_label}}</a>
       </div>
   </div>
   </div>
@@ -135,19 +128,19 @@
     "type": "text",
     "id": "heading",
     "label": "Heading",
-    "default": "Save on Sets"
+    "default": "JEANS FITS"
     },
     {
     "type": "text",
     "id": "subtext",
     "label": "Sub Text",
-    "default": "Made using clean, non-toxic ingredients, our products are designed for everyone."
+    "default": "Explore our premium quality denim range to upgrade your everyday look"
     },
     {
     "type": "text",
     "id": "button_label",
     "label": "Button Label",
-    "default": "Get only $39.00"
+    "default": "Explore Now"
     },
     {
     "type": "url",
