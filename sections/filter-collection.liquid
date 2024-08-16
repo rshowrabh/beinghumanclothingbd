@@ -38,9 +38,8 @@
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
-          <span  data-filter="all">All</span>
             {%- for block in section.blocks -%}
-            <span  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span class="{% if forloop.first%}man{% endif %}"  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
@@ -59,7 +58,14 @@
   </div>
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-   var mixer = mixitup('.collection_list');
+    var E = document.querySelector('.collection_list');
+    var mixer = mixitup({
+    showOnLoad : 'icon', // <----- This property
+    targetSelector: E,
+    filterSelector: '.man',
+    effects: ['fade'],
+    easing: 'snap',
+    }); 
 </script>
   {% schema %}
   {
