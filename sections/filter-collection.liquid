@@ -3,7 +3,8 @@
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
-    .collection-list{
+
+    .collection_list{
       display: flex;
       gap: 15px;
     }
@@ -15,7 +16,7 @@
         justify-content:center;
         align-items:center;
     }
-    .heading button{
+    .heading span{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -31,15 +32,15 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="heading controls">
+        <div class="heading">
             {%- for block in section.blocks -%}
-            <button type="button" class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</button>
+            <span  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <div class="mix {{block.id}} collection-list__item grid__item">
+            <div class="{{block.id}} collection-list__item grid__item">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
