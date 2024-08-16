@@ -3,6 +3,13 @@
       padding-top: calc({{ section.settings.padding_top }}px * 0.75);
       padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
     }
+    ul.collection-list{
+        display: flex;
+        gap: 15px;
+    }
+    ul li{
+        list-style: none;
+    }
   
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
