@@ -1,7 +1,7 @@
 <h1>{{ page_title }}</h1>
 
 <ul>
-  {%- for collection in collections -%}
+  {%- for collection in collections  | where: 'metafields.custom.type', '1'  -%}
     <li>
       <!--
         These control flow tags check to see if there is a featured image for a collection.
