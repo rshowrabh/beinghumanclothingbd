@@ -32,10 +32,20 @@
               "women-jents"
             ]
           }
+        },
+        "column_DhBgiP": {
+          "type": "column",
+          "settings": {
+            "title": "Women",
+            "collection": [
+              "women-jents"
+            ]
+          }
         }
       },
       "block_order": [
-        "column_YCTQ3p"
+        "column_YCTQ3p",
+        "column_DhBgiP"
       ],
       "settings": {
         "color_scheme": "",
