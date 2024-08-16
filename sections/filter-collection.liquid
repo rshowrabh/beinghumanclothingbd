@@ -33,7 +33,7 @@
   {%- endstyle -%}
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="heading">
+        <div class="heading controls">
             {%- for block in section.blocks -%}
             <label class="control" data-filter=".{{  block.id }}">{{block.settings.title}}</label>
             {% endfor %}
