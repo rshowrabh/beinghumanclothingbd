@@ -52,10 +52,45 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "tabs_JMRkAY": {
+      "type": "tabs",
+      "blocks": {
+        "text_fAtBRd": {
+          "type": "text",
+          "settings": {
+            "heading": "Description",
+            "text": "<p>This is product decription  sdc<\/p>"
+          }
+        },
+        "text_7z6pgP": {
+          "type": "text",
+          "settings": {
+            "heading": "Description",
+            "text": "<p>sis product decription <\/p>"
+          }
+        },
+        "text_YkBpaP": {
+          "type": "text",
+          "settings": {
+            "heading": "Description",
+            "text": "<p>This is product decription <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_fAtBRd",
+        "text_7z6pgP",
+        "text_YkBpaP"
+      ],
+      "settings": {
+        "color_scheme": ""
+      }
     }
   },
   "order": [
     "main",
-    "filter_collection_UfgkCp"
+    "filter_collection_UfgkCp",
+    "tabs_JMRkAY"
   ]
 }
