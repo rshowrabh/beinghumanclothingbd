@@ -25,19 +25,13 @@
         "column_j9Kthn": {
           "type": "column",
           "settings": {
-            "image": [
-              "women-jents",
-              "frontpage"
-            ]
+            "image": "women-jents"
           }
         },
         "column_JMeHCe": {
           "type": "column",
           "settings": {
-            "image": [
-              "belts-for-men",
-              "women-jents"
-            ]
+            "image": "belts-for-men"
           }
         }
       },
