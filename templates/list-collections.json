@@ -56,35 +56,35 @@
     "tabs_JMRkAY": {
       "type": "tabs",
       "blocks": {
-        "text_fAtBRd": {
-          "type": "text",
+        "column_Qh8Ra6": {
+          "type": "column",
           "settings": {
-            "heading": "Description",
-            "text": "<p>This is product decription  sdc<\/p>"
+            "title": "Men",
+            "collection": [
+              "belts-for-men",
+              "frontpage"
+            ]
           }
         },
-        "text_7z6pgP": {
-          "type": "text",
+        "column_VPEbGe": {
+          "type": "column",
           "settings": {
-            "heading": "Description",
-            "text": "<p>sis product decription <\/p>"
-          }
-        },
-        "text_YkBpaP": {
-          "type": "text",
-          "settings": {
-            "heading": "Description",
-            "text": "<p>This is product decription <\/p>"
+            "title": "WoMen",
+            "collection": [
+              "women-jents",
+              "frontpage"
+            ]
           }
         }
       },
       "block_order": [
-        "text_fAtBRd",
-        "text_7z6pgP",
-        "text_YkBpaP"
+        "column_Qh8Ra6",
+        "column_VPEbGe"
       ],
       "settings": {
-        "color_scheme": ""
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
