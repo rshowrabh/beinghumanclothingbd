@@ -1,5 +1,7 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -187,10 +189,16 @@
     </div>
   </div>
 </div>
+<script>
+    var arrow; 
+    window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
+</script>
+
+{{ 'slick.min.js' | asset_url | script_tag }}
 
 {% schema %}
 {
-  "name": "t:sections.multicolumn.name",
+  "name": "Filter Collections",
   "class": "section",
   "tag": "section",
   "disabled_on": {
@@ -421,7 +429,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Filter Collections",
       "blocks": [
         {
           "type": "column"
