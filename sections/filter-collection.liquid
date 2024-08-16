@@ -32,7 +32,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
             {%- for block in section.blocks -%}
-            <span class="{% if block[0] %}
+            <span class="{% if forloop.index == 1 %}
               mixitup-control-active
             {% endif %}" data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
