@@ -34,8 +34,9 @@
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading">
-            <span>Men</span>
-            <span>Women</span>
+            {%- for block in section.blocks -%}
+            <span>{{block.settings.title}}</span>
+            {% endfor %}
         </div>
         <ul class="collection-list">
         {%- for block in section.blocks -%}
@@ -92,6 +93,12 @@
     "type": "column",
     "name": "Add Blocks",
     "settings": [
+          {
+          "type": "text",
+          "id": "title",
+          "label": "Tab Name",
+          "default": "Men"
+          },
           {
           "type": "collection",
           "id": "collection",
