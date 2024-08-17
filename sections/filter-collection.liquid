@@ -45,7 +45,7 @@
             <span class="control" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
-        <div class="collection_list mix">
+        <div class="collection_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
             <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
