@@ -28,6 +28,8 @@
 
     {% render 'meta-tags' %}
     {{ 'jquery.min.js' | asset_url | script_tag }}
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
     {{ 'style.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>

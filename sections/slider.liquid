@@ -1,7 +1,3 @@
-
-{{ 'slick.css' | asset_url | stylesheet_tag }}
-{{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
-
 {%- liquid
   assign s = section.settings
   assign slider_height = s.slider_height
