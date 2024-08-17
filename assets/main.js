@@ -28,7 +28,7 @@ function main_slider() {
 function collection_slider() {
     $('.collection_list').slick({ 
         speed:800,
-        infinite: flase,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
