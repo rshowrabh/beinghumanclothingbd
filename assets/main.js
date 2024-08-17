@@ -38,9 +38,12 @@ function collection_slider() {
         responsive: [
             {
               breakpoint: 767,
-              slidesToShow: 1,
-            },
-          ],
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
     }); 
 }
 
