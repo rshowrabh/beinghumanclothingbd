@@ -112,16 +112,16 @@
             ]
         });
         // Auto-select the first filter and filter the slides
-        var $firstFilter = $('.controls .control.selected');
+        var $firstFilter = $('#filter_product .controls .control.selected');
         $slider.slick('slickFilter', function(){
             return $(this).data('category') === $firstFilter.data('filter');
         });
      
         // Filter function for Slick Slider
-         $('.controls .control').on('click', function(){
+         $('#filter_product .controls .control').on('click', function(){
             var filterValue = $(this).attr('data-filter');
                 // Remove the selected class from all buttons and add to the clicked one
-                $('.controls .control').removeClass('selected');
+                $('#filter_product .controls .control').removeClass('selected');
                 $(this).addClass('selected');
                 // Filter slides based on data-category attribute
                 $slider.slick('slickUnfilter').slick('slickFilter', function(){
