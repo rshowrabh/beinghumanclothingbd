@@ -36,6 +36,9 @@
         color:#fff;
         background:#54595f;
     }
+    .selected{
+      background: #000;
+    }
 </style>
 
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
@@ -71,7 +74,7 @@
 {{ 'slick.min.js' | asset_url | script_tag }}
 
 <script>
-    $(document).ready(function(){
+     $(document).ready(function(){
         // Initialize the Slick Slider
         var $slider = $('.collection_list').slick({
             slidesToShow: 3,
@@ -95,25 +98,22 @@
                 }
             ]
         });
-
         // Auto-select the first filter and filter the slides
-        var $firstFilter = $('.controls control.selected');
+        var $firstFilter = $('.controls .control.selected');
         $slider.slick('slickFilter', function(){
             return $(this).data('category') === $firstFilter.data('filter');
         });
-
-        // Filter function for Slick Slider with selected button effect
-        $('.controls control').on('click', function(){
+     
+        // Filter function for Slick Slider
+         $('.controls .control').on('click', function(){
             var filterValue = $(this).attr('data-filter');
-
-            // Remove the selected class from all buttons and add to the clicked one
-            $('.controls control').removeClass('selected');
-            $(this).addClass('selected');
-
-            // Filter slides based on data-category attribute
-            $slider.slick('slickUnfilter').slick('slickFilter', function(){
-                return $(this).data('category') === filterValue;
-            });
+                // Remove the selected class from all buttons and add to the clicked one
+                $('.controls .control').removeClass('selected');
+                $(this).addClass('selected');
+                // Filter slides based on data-category attribute
+                $slider.slick('slickUnfilter').slick('slickFilter', function(){
+                    return $(this).data('category') === filterValue;
+                });
         });
     });
 </script>
