@@ -294,6 +294,10 @@
         onload="this.media='all'"
       >
     {%- endif -%}
+    <script>
+      var arrow; 
+      window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
+  </script>
 
     <script>
       if (Shopify.designMode) {
@@ -370,12 +374,6 @@
     </script>
 
     {{ 'slick.min.js' | asset_url | script_tag }}
-
-    <script>
-      var arrow; 
-      window.arrow = '{{ "arrow.svg" |  asset_url }}'; 
-  </script>
-
     {{ 'main.js' | asset_url | script_tag }}
 
     {%- if settings.predictive_search_enabled -%}
