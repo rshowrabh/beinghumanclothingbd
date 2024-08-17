@@ -77,10 +77,16 @@
      $(document).ready(function(){
         // Initialize the Slick Slider
         var $slider = $('.collection_list').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
+        speed:800,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        arrows:true,
+        dots:false,
+        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
+        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
             responsive: [
                 {
                     breakpoint: 768,
