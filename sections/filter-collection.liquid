@@ -95,18 +95,16 @@
                 }
             ]
         });
+        $slider.slick('slickUnfilter').slick('slickFilter', function(){
+           return $(this).data('category') === {{section.blocks.first.id}};
+        });
         // Filter function for Slick Slider
-        $('.controls .control').on('click', function(){
+         $('.controls .control').on('click', function(){
             var filterValue = $(this).attr('data-filter');
-            if(filterValue == 'all') {
-                // Show all slides
-                $slider.slick('slickUnfilter');
-            } else {
                 // Filter slides based on data-category attribute
                 $slider.slick('slickUnfilter').slick('slickFilter', function(){
                     return $(this).data('category') === filterValue;
                 });
-            }
         });
     });
 </script>
