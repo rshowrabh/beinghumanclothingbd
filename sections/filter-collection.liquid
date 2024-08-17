@@ -22,7 +22,17 @@
     .mix{
       width: calc(30%)
     }
-
+    #filter_collection .slick-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-100%);
+      left: 50px;
+      display: flex;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+      background: #14261c;
+    }
     .controls{
         display:flex;
         justify-content:center;
@@ -50,7 +60,7 @@
     }
 </style>
 
-  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div id="filter_collection" class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
       <h1 class="heading">{{section.settings.heading}}</h1>
         <div class="controls">
