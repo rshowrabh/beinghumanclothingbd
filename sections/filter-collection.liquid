@@ -59,14 +59,40 @@
           </div>
     </div>
   </div>
-  <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
+  {% comment %} <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
    var mixer = mixitup('.collection_list', {
     load: {
     		  filter: ".{{section.blocks.first.id}}"
     		}   
       });
+</script> {% endcomment %}
+
+<script>
+    $('.collection_list').slick({ 
+        speed:800,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        arrows:true,
+        dots:false,
+        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
+        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows:true,
+              }
+            }
+          ]
+    }); 
 </script>
+
   {% schema %}
   {
     "name": "Filter Collections",

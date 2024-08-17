@@ -1,12 +1,12 @@
 
 $(document).ready(function(){
     main_slider();
-    collection_slider()
+    // collection_slider()
 })
 
 document.addEventListener("shopify:section:load", function() {
     main_slider(); 
-    collection_slider()
+    // collection_slider()
 })
 
 function main_slider() {
