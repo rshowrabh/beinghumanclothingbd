@@ -45,7 +45,7 @@
             <span class="control" data-filter=".{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
-        <div class="collection_list d-flex">
+        <div class="collection_list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
             <div class="mix {{block.id}} collection-list__item grid__item">
@@ -102,7 +102,32 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 52
-      }
+      },
+      {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.main-list-collections.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.main-list-collections.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.main-list-collections.settings.columns_mobile.options__2.label"
+        }
+      ],
+      "default": "2",
+      "label": "t:sections.main-list-collections.settings.columns_mobile.label"
+    }
     ],
     
 "blocks": [
