@@ -24,7 +24,7 @@ function main_slider() {
     }); 
 }
 function collection_slider() {
-    $('.slider-collections').slick({ 
+    $('.collection_list').slick({ 
         speed:800,
         infinite: true,
         slidesToShow: 3,
@@ -33,10 +33,20 @@ function collection_slider() {
         autoplaySpeed: 4000,
         arrows:true,
         dots:false,
+        settings: 'unslick',
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
+        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: 'slick',
+            },
+          ],
     }); 
 }
+
+
+
 
 // product tabs
 $('.product-tab-item').on('click', function(){
