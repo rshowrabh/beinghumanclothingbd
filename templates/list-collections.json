@@ -28,8 +28,7 @@
             "title": "Men",
             "collection": [
               "belts-for-men",
-              "frontpage",
-              "women-jents"
+              "frontpage"
             ]
           }
         },
@@ -52,7 +51,9 @@
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 52,
+        "columns_desktop": 3,
+        "columns_mobile": "2"
       }
     },
     "product_tabs_eytVp4": {
