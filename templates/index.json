@@ -65,7 +65,8 @@
           "settings": {
             "title": "Men",
             "collection": [
-              "belts-for-men"
+              "belts-for-men",
+              "frontpage"
             ]
           }
         },
@@ -74,7 +75,8 @@
           "settings": {
             "title": "Women",
             "collection": [
-              "women-jents"
+              "women-jents",
+              "frontpage"
             ]
           }
         }
