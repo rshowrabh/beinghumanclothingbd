@@ -42,13 +42,13 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <span class="control" data-filter=".{{  block.id }}"> {{block.settings.title}}</span>
+            <span class="control" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <div class="mix {{block.id}} collection-list__item grid__item">
+            <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
@@ -71,28 +71,44 @@
 {{ 'slick.min.js' | asset_url | script_tag }}
 
 <script>
-    $('.collection_list').slick({ 
-        speed:800,
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 4000,
-        arrows:true,
-        dots:false,
-        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
-        responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:true,
-              }
+     $(document).ready(function(){
+        // Initialize the Slick Slider
+        var $slider = $('.collection_list').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        // Filter function for Slick Slider
+        $('.controls .control').on('click', function(){
+            var filterValue = $(this).attr('data-filter');
+            if(filterValue == 'all') {
+                // Show all slides
+                $slider.slick('slickUnfilter');
+            } else {
+                // Filter slides based on data-category attribute
+                $slider.slick('slickUnfilter').slick('slickFilter', function(){
+                    return $(this).data('category') === filterValue;
+                });
             }
-          ]
-    }); 
+        });
+    });
 </script>
 
   {% schema %}
