@@ -8,10 +8,10 @@
       background: #000 !important;
     }
     .collection_list{
-      overflow:hidden;
+      flex-wrap:wrap;
     }
     .mix{
-      width: calc(33%)
+      width: calc(30%)
     }
 
     .heading{
@@ -39,7 +39,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <span class="control {% if forloop.first %} man {% endif %}"   data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span class="control data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
