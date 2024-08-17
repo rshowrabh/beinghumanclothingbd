@@ -227,6 +227,43 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "filter_collection_efewLR": {
+      "type": "filter-collection",
+      "blocks": {
+        "column_eqNf7B": {
+          "type": "column",
+          "settings": {
+            "title": "Men",
+            "collection": [
+              "frontpage",
+              "belts-for-men"
+            ]
+          }
+        },
+        "column_6pyGTG": {
+          "type": "column",
+          "settings": {
+            "title": "Women",
+            "collection": [
+              "women-jents",
+              "frontpage"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "column_eqNf7B",
+        "column_6pyGTG"
+      ],
+      "settings": {
+        "heading": "All Thats New Collection",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
     }
   },
   "order": [
@@ -237,6 +274,7 @@
     "popular_Y87Wdp",
     "youtube_video_aiWUiy",
     "season_sale_hViY8U",
-    "shop_all_section_pRUHMU"
+    "shop_all_section_pRUHMU",
+    "filter_collection_efewLR"
   ]
 }
