@@ -39,7 +39,7 @@ function collection_slider() {
             {
               breakpoint: 767,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
               }
             }
