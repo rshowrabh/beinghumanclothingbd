@@ -61,9 +61,7 @@
               {% for product in collection.products %}
                 <p>{{product}}</p>
                 <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
-                {% render 'card-product',
-                card_product: product
-                %}
+                  {%- render 'card-product', product: product -%}
                 </div>
               {% endfor %}          
           {%- endfor -%}
