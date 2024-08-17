@@ -12,7 +12,7 @@
     }
 {%- endstyle -%}
 <style>
-    .collection_list{
+    .product_list{
       flex-wrap:wrap;
     }
     #filter_product .slick-arrow {
@@ -55,7 +55,7 @@
             <span class="control {% if forloop.first %} selected {% endif %}" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
-        <div class="collection_list">
+        <div class="product_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
             <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
@@ -71,7 +71,7 @@
   {% comment %} 
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
-   var mixer = mixitup('.collection_list', {
+   var mixer = mixitup('.product_list', {
     load: {
     		  filter: ".{{section.blocks.first.id}}"
     		}   
@@ -80,10 +80,10 @@
  {% endcomment %}
 
 
-<script>
+{% comment %} <script>
      $(document).ready(function(){
         // Initialize the Slick Slider
-        var $slider = $('.collection_list').slick({
+        var $slider = $('.product_list').slick({
         speed:800,
         infinite: false,
         slidesToShow: 3,
@@ -129,7 +129,7 @@
                 });
         });
     });
-</script>
+</script> {% endcomment %}
 
   {% schema %}
   {
@@ -212,7 +212,7 @@
           "default": "Men"
           },
           {
-          "type": "collection_list",
+          "type": "product_list",
           "id": "collection",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
           }
