@@ -28,6 +28,7 @@
 
     {% render 'meta-tags' %}
     {{ 'jquery.min.js' | asset_url | script_tag }}
+    {{ 'slick.min.js' | asset_url | script_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
     {{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
     {{ 'style.css' | asset_url | stylesheet_tag }}
@@ -373,7 +374,6 @@
       };
     </script>
 
-    {{ 'slick.min.js' | asset_url | script_tag }}
     {{ 'main.js' | asset_url | script_tag }}
 
     {%- if settings.predictive_search_enabled -%}
