@@ -25,30 +25,30 @@ function main_slider() {
 }
 
 
-function collection_slider() {
-    $('.collection_list').slick({ 
-        speed:800,
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 4000,
-        arrows:true,
-        dots:false,
-        prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-        nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
-        responsive: [
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows:true,
-              }
-            }
-          ]
-    }); 
-}
+// function collection_slider() {
+//     $('.collection_list').slick({ 
+//         speed:800,
+//         infinite: false,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         autoplay: false,
+//         autoplaySpeed: 4000,
+//         arrows:true,
+//         dots:false,
+//         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
+//         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
+//         responsive: [
+//             {
+//               breakpoint: 767,
+//               settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 arrows:true,
+//               }
+//             }
+//           ]
+//     }); 
+// }
 
 // product tabs
 $('.product-tab-item').on('click', function(){
