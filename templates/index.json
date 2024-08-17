@@ -60,31 +60,28 @@
     "filter_product_qPETAp": {
       "type": "filter-product",
       "blocks": {
-        "column_fgV3fP": {
+        "column_UGqFQf": {
           "type": "column",
           "settings": {
             "title": "Men",
             "collection": [
-              "basic-high-neck-sweater",
-              "basic-high-neck-sweater-1",
-              "basic-high-neck-sweater-2"
+              "belts-for-men"
             ]
           }
         },
-        "column_WkQ4YE": {
+        "column_bW4AUG": {
           "type": "column",
           "settings": {
-            "title": "Woment",
+            "title": "Women",
             "collection": [
-              "basic-high-neck-sweater-3",
-              "basic-high-neck-sweater-2"
+              "women-jents"
             ]
           }
         }
       },
       "block_order": [
-        "column_fgV3fP",
-        "column_WkQ4YE"
+        "column_UGqFQf",
+        "column_bW4AUG"
       ],
       "settings": {
         "heading": "All Thats New",
