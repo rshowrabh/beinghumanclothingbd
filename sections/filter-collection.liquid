@@ -23,20 +23,20 @@
       width: calc(30%)
     }
 
-    .heading{
+    .controls{
         height:100px;
         width:100%;
         display:flex;
         justify-content:center;
         align-items:center;
     }
-    .heading .control{
+    .controls .control{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
         background:#54595f;
     }
-    .heading h1{
+    .heading{
       font-size: 28px;
       text-transform: uppercase;
       line-height: 1.3em;
@@ -53,8 +53,8 @@
 
   <div class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
-        <div class="heading controls">
-            <h1>{{section.settings.heading}}</h1>
+      <h1 class="heading">{{section.settings.heading}}</h1>
+        <div class="controls">
             {%- for block in section.blocks -%}
             <span class="control {% if forloop.first %} selected {% endif %}" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
