@@ -15,7 +15,7 @@
     .collection_list{
       flex-wrap:wrap;
     }
-    #filter_collection .slick-arrow {
+    #filter_product .slick-arrow {
       transform: translateY(-100%);
       background: #14261c;
     }
@@ -32,7 +32,7 @@
         color:#fff;
         background:#54595f;
     }
-    #filter_collection .heading{
+    #filter_product .heading{
       font-size: 28px;
       text-transform: uppercase;
       line-height: 1.3em;
@@ -47,7 +47,7 @@
     }
 </style>
 
-  <div id="filter_collection" class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div id="filter_product" class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding">
       <h1 class="heading">{{section.settings.heading}}</h1>
         <div class="controls">
@@ -57,7 +57,7 @@
         </div>
         <div class="collection_list">
         {%- for block in section.blocks -%}
-            {% for collection in block.settings.collection %}
+            {% for collection in block.settings.collection.product %}
             <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
                 {% render 'card-collection',
                 card_collection: collection,
@@ -134,7 +134,7 @@
 
   {% schema %}
   {
-    "name": "Filter Collections",
+    "name": "Filter Product",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -222,7 +222,7 @@
 ],
     "presets": [
       {
-        "name": "Filter Collections"
+        "name": "Filter Product"
       }
     ]
   }
