@@ -59,10 +59,9 @@
   <script src="{{ 'mixitup.min.js' | asset_url }}"></script>
   <script>
    var mixer = mixitup('.collection_list', {
-    controls: {
-      toggleDefault: '.man'
-      filter: '.man'
-    }
+    load: {
+    		  filter: '.man'
+    		}   
 });
 </script>
   {% schema %}
