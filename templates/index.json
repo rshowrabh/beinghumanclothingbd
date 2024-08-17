@@ -60,30 +60,24 @@
     "filter_product_qPETAp": {
       "type": "filter-product",
       "blocks": {
-        "column_UGqFQf": {
+        "column_D4rLkm": {
           "type": "column",
           "settings": {
             "title": "Men",
-            "collection": [
-              "belts-for-men",
-              "frontpage"
-            ]
+            "collection": "belts-for-men"
           }
         },
-        "column_bW4AUG": {
+        "column_Jcnm4L": {
           "type": "column",
           "settings": {
             "title": "Women",
-            "collection": [
-              "women-jents",
-              "frontpage"
-            ]
+            "collection": "women-jents"
           }
         }
       },
       "block_order": [
-        "column_UGqFQf",
-        "column_bW4AUG"
+        "column_D4rLkm",
+        "column_Jcnm4L"
       ],
       "settings": {
         "heading": "All Thats New",
