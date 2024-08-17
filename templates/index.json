@@ -57,6 +57,44 @@
         "slider_height": "default"
       }
     },
+    "filter_product_qPETAp": {
+      "type": "filter-product",
+      "blocks": {
+        "column_fgV3fP": {
+          "type": "column",
+          "settings": {
+            "title": "Men",
+            "collection": [
+              "basic-high-neck-sweater",
+              "basic-high-neck-sweater-1",
+              "basic-high-neck-sweater-2"
+            ]
+          }
+        },
+        "column_WkQ4YE": {
+          "type": "column",
+          "settings": {
+            "title": "Woment",
+            "collection": [
+              "basic-high-neck-sweater-3",
+              "basic-high-neck-sweater-2"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "column_fgV3fP",
+        "column_WkQ4YE"
+      ],
+      "settings": {
+        "heading": "All Thats New",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -240,6 +278,7 @@
   },
   "order": [
     "slider_pNxV9F",
+    "filter_product_qPETAp",
     "image_banner",
     "featured_collection",
     "two_column_section_KTKXnP",
