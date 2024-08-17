@@ -253,7 +253,4 @@ video.slider-video {
     .slider-item.default {
         height: 400px;
     }
-    .slick-arrow {
-        display: none !important;
-    }
 }
