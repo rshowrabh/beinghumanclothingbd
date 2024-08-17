@@ -12,21 +12,21 @@
     }
 {%- endstyle -%}
 <style>
-    .product_list{
+    #filter_product .product_list{
       flex-wrap:wrap;
     }
     #filter_product .slick-arrow {
       transform: translateY(-100%);
       background: #14261c;
     }
-    .controls{
+    #filter_product .controls{
         display:flex;
         justify-content:center;
         align-items:center;
         margin-bottom: 10px;
         cursor: pointer;
     }
-    .controls .control{
+    #filter_product .controls .control{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -39,10 +39,10 @@
       text-align: center;
       color: #14261C;
     }
-    .control.selected{
+    #filter_product .control.selected{
       background: #000;
     }
-    .collection-list__item{
+    #filter_product .collection-list__item{
       padding: 0px 10px;
     }
 </style>
@@ -214,7 +214,7 @@
           {
           "type": "collection",
           "id": "collection",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+          "label": "Select Collection"
           }
   ]
  }

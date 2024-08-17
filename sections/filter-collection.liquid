@@ -12,21 +12,21 @@
     }
 {%- endstyle -%}
 <style>
-    .collection_list{
+    #filter_collection .collection_list{
       flex-wrap:wrap;
     }
     #filter_collection .slick-arrow {
       transform: translateY(-100%);
       background: #14261c;
     }
-    .controls{
+    #filter_collection .controls{
         display:flex;
         justify-content:center;
         align-items:center;
         margin-bottom: 10px;
         cursor: pointer;
     }
-    .controls .control{
+    #filter_collection .controls .control{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -39,10 +39,10 @@
       text-align: center;
       color: #14261C;
     }
-    .control.selected{
+    #filter_collection .control.selected{
       background: #000;
     }
-    .collection-list__item{
+    #filter_collection .collection-list__item{
       padding: 0px 10px;
     }
 </style>
@@ -58,7 +58,7 @@
         <div class="collection_list">
         {%- for block in section.blocks -%}
             {% for collection in block.settings.collection %}
-            <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
+            <div class="{{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
@@ -215,7 +215,7 @@
           {
           "type": "collection_list",
           "id": "collection",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+          "label": "Select Collection List"
           }
   ]
  }
