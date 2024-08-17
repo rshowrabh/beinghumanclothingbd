@@ -26,11 +26,7 @@ function main_slider() {
 
 // Mixitup
 
-    var mixer = mixitup('.collection_list', {
-    load: {
-    filter: "none"
-    }   
-    });
+    var mixer = mixitup('.collection_list');
 
 
 function collection_slider() {
