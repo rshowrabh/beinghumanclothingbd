@@ -33,13 +33,12 @@ function collection_slider() {
         autoplaySpeed: 4000,
         arrows:true,
         dots:false,
-        settings: 'unslick',
         prevArrow:"<span type='button' class='arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
         responsive: [
             {
               breakpoint: 767,
-              settings: 'slick',
+              slidesToShow: 1,
             },
           ],
     }); 
