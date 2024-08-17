@@ -59,7 +59,14 @@
           </div>
     </div>
   </div>
- 
+  <script>
+   var mixer = mixitup('.collection_list', {
+    load: {
+    		  filter: ".{{section.blocks.first.id}}"
+    		}   
+      });
+      $('.collection_list').slick('setPosition');
+</script>
   {% schema %}
   {
     "name": "Filter Collections",

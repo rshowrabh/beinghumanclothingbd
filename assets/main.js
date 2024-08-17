@@ -24,15 +24,11 @@ function main_slider() {
     }); 
 }
 
-// Mixitup
-
-    var mixer = mixitup('.collection_list');
-
 
 function collection_slider() {
     $('.collection_list').slick({ 
         speed:800,
-        infinite: false,
+        infinite: flase,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
