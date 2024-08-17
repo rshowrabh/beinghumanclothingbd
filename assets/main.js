@@ -23,6 +23,16 @@ function main_slider() {
         nextArrow:"<span type='button' class='arrow-next'><img src='"+ arrow +"' alt='arrow'></span>"
     }); 
 }
+
+// Mixitup
+
+    var mixer = mixitup('.collection_list', {
+    load: {
+    filter: ".{{section.blocks.first.id}}"
+    }   
+    });
+
+
 function collection_slider() {
     $('.collection_list').slick({ 
         speed:800,
@@ -39,7 +49,7 @@ function collection_slider() {
             {
               breakpoint: 767,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows:true,
               }
