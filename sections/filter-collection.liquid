@@ -42,7 +42,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <span class="control" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
+            <span class="control {% if forloop.first %} selected {% endif %}" data-filter="{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list">
@@ -71,7 +71,7 @@
 {{ 'slick.min.js' | asset_url | script_tag }}
 
 <script>
-    $(document).ready(function(){
+     $(document).ready(function(){
         // Initialize the Slick Slider
         var $slider = $('.collection_list').slick({
             slidesToShow: 3,
@@ -95,25 +95,19 @@
                 }
             ]
         });
-
         // Auto-select the first filter and filter the slides
-        var $firstFilter = $('.controls control.selected');
+        var $firstFilter = $('.controls .control.selected');
         $slider.slick('slickFilter', function(){
             return $(this).data('category') === $firstFilter.data('filter');
         });
-
-        // Filter function for Slick Slider with selected control effect
-        $('.controls control').on('click', function(){
+     
+        // Filter function for Slick Slider
+         $('.controls .control').on('click', function(){
             var filterValue = $(this).attr('data-filter');
-
-            // Remove the selected class from all buttons and add to the clicked one
-            $('.controls control').removeClass('selected');
-            $(this).addClass('selected');
-
-            // Filter slides based on data-category attribute
-            $slider.slick('slickUnfilter').slick('slickFilter', function(){
-                return $(this).data('category') === filterValue;
-            });
+                // Filter slides based on data-category attribute
+                $slider.slick('slickUnfilter').slick('slickFilter', function(){
+                    return $(this).data('category') === filterValue;
+                });
         });
     });
 </script>
