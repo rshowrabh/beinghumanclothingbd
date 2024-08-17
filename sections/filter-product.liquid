@@ -57,7 +57,7 @@
         </div>
         <div class="product_list">
         {%- for block in section.blocks -%}
-          <p>{{block.settings.collection.title}}</p>
+          <p>{{block.settings.collection.products}}</p>
             {% for product in block.settings.collection %}
                 
                 <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
