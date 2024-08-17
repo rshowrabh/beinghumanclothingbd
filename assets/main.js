@@ -28,7 +28,7 @@ function main_slider() {
 
     var mixer = mixitup('.collection_list', {
     load: {
-    filter: ".{{section.blocks.first.id}}"
+    filter: "none"
     }   
     });
 
