@@ -12,21 +12,21 @@
     }
 {%- endstyle -%}
 <style>
-    #filter_product .product_list{
+    .product_list{
       flex-wrap:wrap;
     }
     #filter_product .slick-arrow {
       transform: translateY(-100%);
       background: #14261c;
     }
-    #filter_product .controls{
+    .controls{
         display:flex;
         justify-content:center;
         align-items:center;
         margin-bottom: 10px;
         cursor: pointer;
     }
-    #filter_product .controls .control{
+    .controls .control{
         padding:10px 50px;
         display: inline-block;
         color:#fff;
@@ -39,10 +39,10 @@
       text-align: center;
       color: #14261C;
     }
-    #filter_product .control.selected{
+    .control.selected{
       background: #000;
     }
-    #filter_product .collection-list__item{
+    .collection-list__item{
       padding: 0px 10px;
     }
 </style>
@@ -57,11 +57,13 @@
         </div>
         <div class="product_list">
         {%- for block in section.blocks -%}
-            {% for product in block.settings.collection.products %}          
-                <div class="{{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
+          <p>{{block.settings.collection.products.first.title}}</p>
+            {% for product in block.settings.collection.products %}
+              <h1>{{ product.title }}</h1>            
+                <div class="slick-slide {{block.id}} collection-list__item grid__item" data-category="{{block.id}}">
                   {% render 'card-product',
-                      card_product: product,
-                   %}
+                card_product: product,
+              %}
                 </div>       
           {%- endfor -%}
           {%- endfor -%}
@@ -80,7 +82,7 @@
  {% endcomment %}
 
 
-<script>
+{% comment %} <script>
      $(document).ready(function(){
         // Initialize the Slick Slider
         var $slider = $('.product_list').slick({
@@ -112,16 +114,16 @@
             ]
         });
         // Auto-select the first filter and filter the slides
-        var $firstFilter = $('#filter_product .controls .control.selected');
+        var $firstFilter = $('.controls .control.selected');
         $slider.slick('slickFilter', function(){
             return $(this).data('category') === $firstFilter.data('filter');
         });
      
         // Filter function for Slick Slider
-         $('#filter_product .controls .control').on('click', function(){
+         $('.controls .control').on('click', function(){
             var filterValue = $(this).attr('data-filter');
                 // Remove the selected class from all buttons and add to the clicked one
-                $('#filter_product .controls .control').removeClass('selected');
+                $('.controls .control').removeClass('selected');
                 $(this).addClass('selected');
                 // Filter slides based on data-category attribute
                 $slider.slick('slickUnfilter').slick('slickFilter', function(){
@@ -129,7 +131,7 @@
                 });
         });
     });
-</script>
+</script> {% endcomment %}
 
   {% schema %}
   {
@@ -214,7 +216,7 @@
           {
           "type": "collection",
           "id": "collection",
-          "label": "Select Collection"
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
           }
   ]
  }
