@@ -59,6 +59,7 @@
     },
     "featured_collection_cbqNC4": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
