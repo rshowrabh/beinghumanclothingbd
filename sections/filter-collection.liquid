@@ -42,7 +42,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <span class="control data-filter=.{{  block.id }}"> {{block.settings.title}}</span>
+            <span class="control" data-filter=".{{  block.id }}"> {{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
@@ -63,7 +63,7 @@
   <script>
    var mixer = mixitup('.collection_list', {
     load: {
-    		  filter: ".{{section.blocks.first.id}}"
+    		  filter: "all"
     		}   
 });
 </script>
