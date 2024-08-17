@@ -95,6 +95,10 @@
                 }
             ]
         });
+
+        $slider.slick('slickUnfilter').slick('slickFilter', function(){
+              return $(this).data('category') === {{section.blocks.first.id}};
+           });
        
         // Filter function for Slick Slider
          $('.controls .control').on('click', function(){
