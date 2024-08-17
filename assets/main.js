@@ -52,6 +52,7 @@ function collection_slider() {
 
 
 
+$('.collection_list').slick('setPosition');
 
 // product tabs
 $('.product-tab-item').on('click', function(){
