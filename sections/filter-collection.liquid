@@ -39,7 +39,7 @@
     <div class="section-{{ section.id }}-padding page-width">
         <div class="heading controls">
             {%- for block in section.blocks -%}
-            <span class="control"  data-filter=".{{  block.id }}">{{block.settings.title}}</span>
+            <span class="control {% if forloop.first %} man {% endif %}"   data-filter=".{{  block.id }}">{{block.settings.title}}</span>
             {% endfor %}
         </div>
         <div class="collection_list d-flex">
@@ -49,7 +49,7 @@
                 {% render 'card-collection',
                 card_collection: collection,
                 columns: 3
-        %}
+          %}
           </div>
           {%- endfor -%}
           {%- endfor -%}
@@ -60,7 +60,8 @@
   <script>
    var mixer = mixitup('.collection_list', {
     controls: {
-        toggleDefault: '.man'
+      toggleDefault: '.man',
+      filter: '.man',
     }
 });
 </script>
