@@ -11,6 +11,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "top_bar_DCDcCc": {
+      "type": "top-bar",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -53,14 +61,6 @@
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20
-      }
-    },
-    "top_bar_DCDcCc": {
-      "type": "top-bar",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     }
   },
