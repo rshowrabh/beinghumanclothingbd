@@ -31,7 +31,6 @@
     {{ 'slick.min.js' | asset_url | script_tag }}
     {{ 'slick.css' | asset_url | stylesheet_tag }}
     {{'sliders.css' | asset_url | stylesheet_tag: preload: true}}
-    {{ 'style.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
@@ -305,6 +304,7 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+      {{ 'style.css' | asset_url | stylesheet_tag:preload: true }}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
