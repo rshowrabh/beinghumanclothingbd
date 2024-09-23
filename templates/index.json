@@ -167,70 +167,9 @@
         "columns_mobile": "2"
       }
     },
-    "filter_product_qPETAp": {
-      "type": "filter-product",
-      "blocks": {
-        "column_D4rLkm": {
-          "type": "column",
-          "settings": {
-            "title": "Men",
-            "collection": "belts-for-men"
-          }
-        },
-        "column_Jcnm4L": {
-          "type": "column",
-          "settings": {
-            "title": "Women",
-            "collection": "women-jents"
-          }
-        }
-      },
-      "block_order": [
-        "column_D4rLkm",
-        "column_Jcnm4L"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "All Thats New",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "columns_desktop": 3,
-        "columns_mobile": "2"
-      }
-    },
-    "popular_Y87Wdp": {
-      "type": "popular",
-      "disabled": true,
-      "settings": {
-        "offer": "-20%",
-        "heading": "JEANS FITS",
-        "subtext": "Explore our premium quality denim range to upgrade your everyday look",
-        "button_label": "Explore Now",
-        "button_link": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "youtube_video_aiWUiy": {
       "type": "youtube-video",
       "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "season_sale_hViY8U": {
-      "type": "season-sale",
-      "disabled": true,
-      "settings": {
-        "heading": "Season Sale",
-        "subtext": "upto 50% off",
-        "button_label": "Explore Now",
-        "button_link": "",
-        "button_label2": "Explore Now",
-        "button_link2": "",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -291,10 +230,7 @@
     "slider_pNxV9F",
     "new_collection_list_dGtUk4",
     "filter_collection_efewLR",
-    "filter_product_qPETAp",
-    "popular_Y87Wdp",
     "youtube_video_aiWUiy",
-    "season_sale_hViY8U",
     "big_image_banner_fEKFLb"
   ]
 }
