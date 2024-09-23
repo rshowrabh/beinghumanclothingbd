@@ -49,11 +49,18 @@ body{
 .mobile {
     display: none;
 }
+/* cart */
 .cart-count-bubble {
     bottom: none;
 	top: 2px;
 }
 
+/* slider */
+
+.slick-dots {
+	width: 90%;
+	justify-content: flex-end;
+}
 
 @media only screen and (max-width:767px) {
     .btn {
