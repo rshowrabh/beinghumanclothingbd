@@ -79,12 +79,14 @@
     transition: .1s all ease-in-out;
     color: #3785c8;
 	background-color: #FFF;
+    border-radius: 4px;
 }
 #three-column-gallary .text a {
 	transition: .1s all ease-in-out;
 	padding: 15px 30px;
 	background: #3785c8;
 	color: #FFF;
+    border-radius: 2px;
 }
 
 
