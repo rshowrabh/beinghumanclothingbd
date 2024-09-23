@@ -49,6 +49,10 @@ body{
 .mobile {
     display: none;
 }
+.cart-count-bubble {
+    bottom: none;
+	top: 2px;
+}
 
 
 @media only screen and (max-width:767px) {
