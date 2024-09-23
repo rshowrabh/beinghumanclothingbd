@@ -28,9 +28,11 @@
     object-position: center center;
     transition: 0.5s all ease-in-out; 
 }
-#three-column-gallary .text{
-    padding-top: 10px;
-    padding-left: 30px;
+#three-column-gallary .text {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 #three-column-gallary .text > *{
     font-weight: 600;
@@ -73,12 +75,16 @@
     transition: 0.1s all ease-in-out;
     font-weight: 600;
 }
-#three-column-gallary .text a:hover{
-    transition: 0.1s all ease-in-out;
-    font-weight: 600;
+#three-column-gallary .text:hover a{
+    transition: .1s all ease-in-out;
+    color: #3785c8;
+	background-color: #FFF;
 }
-#three-column-gallary .text a{
-    transition: 0.1s all ease-in-out;
+#three-column-gallary .text a {
+	transition: .1s all ease-in-out;
+	padding: 15px 30px;
+	background: #3785c8;
+	color: #FFF;
 }
 
 
