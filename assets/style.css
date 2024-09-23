@@ -23,6 +23,9 @@ body{
 .w-100 {
     width: 100%;
 }
+.bg-black{
+    background: #000;
+}
 .btn {
     padding: 9px 130px;
     border-radius: 1px;
