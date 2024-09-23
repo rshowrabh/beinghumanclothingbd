@@ -15,7 +15,7 @@
         "slides_XyizFj": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/a.webp",
+            "bg_image": "shopify://shop_images/a.webp",
             "content_position": "center-bottom",
             "content_alignment": "left",
             "opacity": 10,
@@ -33,7 +33,7 @@
         "slides_YhafLB": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/c.jpq.webp",
+            "bg_image": "shopify://shop_images/c.jpq.webp",
             "content_position": "left-center",
             "content_alignment": "left",
             "opacity": 10,
@@ -117,34 +117,6 @@
         "columns_mobile": "2"
       }
     },
-    "two_column_section_KTKXnP": {
-      "type": "two-column-section",
-      "blocks": {
-        "column_rj7bUk": {
-          "type": "column",
-          "settings": {
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        },
-        "column_YaJQf8": {
-          "type": "column",
-          "settings": {
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_rj7bUk",
-        "column_YaJQf8"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "popular_Y87Wdp": {
       "type": "popular",
       "settings": {
@@ -175,55 +147,6 @@
         "button_link": "",
         "button_label2": "Explore Now",
         "button_link2": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "shop_all_section_pRUHMU": {
-      "type": "shop-all-section",
-      "blocks": {
-        "column_UMU3jj": {
-          "type": "column",
-          "settings": {
-            "button_label": "Demo",
-            "button_link": ""
-          }
-        },
-        "column_7UAHDH": {
-          "type": "column",
-          "settings": {
-            "button_label": "Demo",
-            "button_link": ""
-          }
-        },
-        "column_qxyVGk": {
-          "type": "column",
-          "settings": {
-            "button_label": "Demo",
-            "button_link": ""
-          }
-        },
-        "column_WyNzbV": {
-          "type": "column",
-          "settings": {
-            "button_label": "Demo",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_UMU3jj",
-        "column_7UAHDH",
-        "column_qxyVGk",
-        "column_WyNzbV"
-      ],
-      "settings": {
-        "offer": "-20%",
-        "heading": "JEANS FITS",
-        "subtext": "Explore our premium quality denim range to upgrade your everyday look",
-        "button_label": "Explore Now",
-        "button_link": "",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -265,17 +188,53 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
+    },
+    "new_collection_style_mXGBAr": {
+      "type": "new-collection-style",
+      "blocks": {
+        "column_eJPQ6y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Product-3b.jpg",
+            "button_label": "For Men",
+            "button_link": "shopify://collections/belts-for-men"
+          }
+        },
+        "column_AUwyPN": {
+          "type": "column",
+          "settings": {
+            "button_label": "For Women",
+            "button_link": "shopify://collections/women-jents"
+          }
+        },
+        "column_ni6nk4": {
+          "type": "column",
+          "settings": {
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_eJPQ6y",
+        "column_AUwyPN",
+        "column_ni6nk4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "slider_pNxV9F",
     "featured_collection_cbqNC4",
     "filter_product_qPETAp",
-    "two_column_section_KTKXnP",
     "popular_Y87Wdp",
     "youtube_video_aiWUiy",
     "season_sale_hViY8U",
-    "shop_all_section_pRUHMU",
-    "filter_collection_efewLR"
+    "filter_collection_efewLR",
+    "new_collection_style_mXGBAr"
   ]
 }
