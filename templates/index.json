@@ -33,7 +33,7 @@
         "slides_YhafLB": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify://shop_images/c.jpq.webp",
+            "bg_image": "shopify://shop_images/7-06-70061107-2c27-449a-8ae2-56a397399541.webp",
             "content_position": "left-center",
             "content_alignment": "left",
             "opacity": 10,
@@ -47,11 +47,30 @@
             "enable_link": false,
             "color_scheme": "accent-1"
           }
+        },
+        "slides_c6JLek": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify://shop_images/being-0d1cb76e-886a-4065-824d-094643b9b5d9.webp",
+            "content_position": "left-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Free home delivery if you get 5 items",
+            "sub_heading": "Elevate Your Comfort With Our",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
         }
       },
       "block_order": [
         "slides_XyizFj",
-        "slides_YhafLB"
+        "slides_YhafLB",
+        "slides_c6JLek"
       ],
       "settings": {
         "slider_height": "large"
