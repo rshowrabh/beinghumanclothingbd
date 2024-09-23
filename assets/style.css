@@ -93,14 +93,3 @@ body{
         display: block;
     }
 }
-
-/* Navigation Full Size */
-.header__inline-menu {
-    width: calc(100% + 100px);
-    margin-left: -100px;
-    margin-right: -100px;
-}
-
-.header__inline-menu .list-menu {
-    width: 100%;
-}
