@@ -105,7 +105,7 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "",
