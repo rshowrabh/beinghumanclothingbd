@@ -28,6 +28,23 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
+<style>
+  .labels .big{
+	color: white;
+	font-family: "DK PLAKKAAT";
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: white;
+	padding-left: 12px;
+	padding-right: 10px;
+	line-height: 22px;
+	margin-top: 25px;
+	font-size: 1.4rem;
+  }
+  .labels .big.last{
+	border:none
+  }
+</style>
 
 {%- liquid
   assign full_width = '100vw'
