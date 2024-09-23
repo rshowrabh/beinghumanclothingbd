@@ -95,14 +95,5 @@ body{
 }
 
 /* Navigation Full Size */
-.header__inline-menu {
-    width: calc(100% + 100px);
-    margin-left: -50px;
-    margin-right: -50px;
-}
-
-.header__inline-menu .list-menu {
-    width: 100%;
-}
 
 .header__inline-menu {width:100%;}
