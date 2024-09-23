@@ -189,6 +189,7 @@
         "column_D4rLkm",
         "column_Jcnm4L"
       ],
+      "disabled": true,
       "settings": {
         "heading": "All Thats New",
         "color_scheme": "",
@@ -235,43 +236,6 @@
         "padding_bottom": 52
       }
     },
-    "new_collection_style_mXGBAr": {
-      "type": "new-collection-style",
-      "blocks": {
-        "column_eJPQ6y": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Product-3b.jpg",
-            "button_label": "For Men",
-            "button_link": "shopify://collections/belts-for-men"
-          }
-        },
-        "column_AUwyPN": {
-          "type": "column",
-          "settings": {
-            "button_label": "For Women",
-            "button_link": "shopify://collections/women-jents"
-          }
-        },
-        "column_ni6nk4": {
-          "type": "column",
-          "settings": {
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_eJPQ6y",
-        "column_AUwyPN",
-        "column_ni6nk4"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "big_image_banner_fEKFLb": {
       "type": "big-image-banner",
       "blocks": {
@@ -309,7 +273,7 @@
         "buttons_LMRGan"
       ],
       "settings": {
-        "image": "shopify://shop_images/welcome-to-my-business.jpg",
+        "image": "shopify://shop_images/bh-children_1_-6ee64238-5654-41c1-8b3c-b1d1f364e719.webp",
         "image_overlay_opacity": 20,
         "image_height": "large",
         "desktop_content_position": "bottom-right",
@@ -331,7 +295,6 @@
     "popular_Y87Wdp",
     "youtube_video_aiWUiy",
     "season_sale_hViY8U",
-    "new_collection_style_mXGBAr",
     "big_image_banner_fEKFLb"
   ]
 }
