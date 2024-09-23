@@ -119,6 +119,7 @@
     },
     "popular_Y87Wdp": {
       "type": "popular",
+      "disabled": true,
       "settings": {
         "offer": "-20%",
         "heading": "JEANS FITS",
@@ -140,6 +141,7 @@
     },
     "season_sale_hViY8U": {
       "type": "season-sale",
+      "disabled": true,
       "settings": {
         "heading": "Season Sale",
         "subtext": "upto 50% off",
