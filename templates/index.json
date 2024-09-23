@@ -30,6 +30,23 @@
             "color_scheme": "accent-1"
           }
         },
+        "slides_jXeCn9": {
+          "type": "slides",
+          "settings": {
+            "content_position": "left-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "",
+            "sub_heading": "",
+            "text": "",
+            "btn_label": "",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        },
         "slides_YhafLB": {
           "type": "slides",
           "settings": {
@@ -69,6 +86,7 @@
       },
       "block_order": [
         "slides_XyizFj",
+        "slides_jXeCn9",
         "slides_YhafLB",
         "slides_c6JLek"
       ],
