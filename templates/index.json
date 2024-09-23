@@ -228,24 +228,24 @@
         "padding_bottom": 52
       }
     },
-    "big_image_banner_hKPrJP": {
+    "big_image_banner_fEKFLb": {
       "type": "big-image-banner",
       "blocks": {
-        "heading_zK3VGA": {
+        "heading_icfTjw": {
           "type": "heading",
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1"
           }
         },
-        "text_8L7EGx": {
+        "text_nbkVUq": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
           }
         },
-        "buttons_WykEPF": {
+        "buttons_LMRGan": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Button label",
@@ -258,17 +258,16 @@
         }
       },
       "block_order": [
-        "heading_zK3VGA",
-        "text_8L7EGx",
-        "buttons_WykEPF"
+        "heading_icfTjw",
+        "text_nbkVUq",
+        "buttons_LMRGan"
       ],
       "settings": {
-        "image": "shopify://shop_images/welcome-to-my-business.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "bottom-right",
+        "desktop_content_position": "middle-center",
         "show_text_box": true,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -286,6 +285,6 @@
     "season_sale_hViY8U",
     "filter_collection_efewLR",
     "new_collection_style_mXGBAr",
-    "big_image_banner_hKPrJP"
+    "big_image_banner_fEKFLb"
   ]
 }
