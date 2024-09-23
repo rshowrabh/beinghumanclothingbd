@@ -21,8 +21,8 @@
     }
  </style>
 
-  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
-    <div class="section-{{ section.id }}-padding page-width bg-black">
+  <div class="color-{{ section.settings.color_scheme }} gradient isolate bg-black">
+    <div class="section-{{ section.id }}-padding page-width">
         <div class="text">
             <a href="./contact"> Help </a>
         </div>
@@ -34,6 +34,9 @@
     "name": "Top Bar",
     "tag": "section",
     "class": "section",
+    "enabled_on": {
+    "groups": ["header"]
+    },
     "settings": [
       {
         "type": "color_scheme",
@@ -53,7 +56,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_top",
-        "default": 40
+        "default": 0
       },
       {
         "type": "range",
@@ -63,7 +66,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
-        "default": 52
+        "default": 0
       }
     ],
     "presets": [
