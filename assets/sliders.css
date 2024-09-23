@@ -7,6 +7,9 @@
 .slider-item.default {
     height: 650px;
 }
+.slider-item.large {
+    height: 100vh;
+}
 .slider-info {
     position: absolute;
     width: 100%;
