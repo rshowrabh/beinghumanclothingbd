@@ -224,6 +224,62 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "multicolumn_LXfH7b": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jg9dV9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fast-1340675c-895d-40af-a894-454b7d79e449.webp",
+            "title": "<strong>Free Shipping</strong>",
+            "text": "<p>We deliver our products right at<br/>your doorstep with the utmost care, love, not to mention free shipping</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_47cMEc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/quality-38e9e69b-a8f7-436e-b695-c8601b82b664.png",
+            "title": "<strong>High quality, Unbeatable value</strong>",
+            "text": "<p>Our high-end fabric is everything you desire for your everyday comfort and fashion declaration.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kLa8x6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/exchange-dd48d874-d0e9-4fa1-946b-24f11f0a44dd.webp",
+            "title": "<strong>Easy Return</strong>",
+            "text": "<p>Your shopping experience is made supremely easy and comfortable when it comes to returning products.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jg9dV9",
+        "column_47cMEc",
+        "column_kLa8x6"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -231,6 +287,7 @@
     "new_collection_list_dGtUk4",
     "filter_collection_efewLR",
     "youtube_video_aiWUiy",
-    "big_image_banner_fEKFLb"
+    "big_image_banner_fEKFLb",
+    "multicolumn_LXfH7b"
   ]
 }
