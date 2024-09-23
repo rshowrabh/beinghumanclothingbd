@@ -14,6 +14,27 @@
     }
   }
 {%- endstyle -%}
+<style>
+  .new_gallary .card__content{
+    position:absoulute;
+    bottom: 100px;
+  }
+  .new_gallary .card__content a {
+	background: #3785c8;
+    color:#fff;
+	display: inline;
+	padding: 15px 35px;
+	border-radius: 2px;
+    transition: .1s all ease-in-out;
+  }
+  .new_gallary .card__content a:hover {
+    transition: .1s all ease-in-out;
+	color: #3785c8;
+    background:#fff;
+    border-radius: 4px;
+  }
+  }
+</style>
 
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
@@ -23,7 +44,7 @@
   endif
 -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient new_gallary">
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
