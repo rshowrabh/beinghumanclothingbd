@@ -104,3 +104,5 @@ body{
 .header__inline-menu .list-menu {
     width: 100%;
 }
+
+.header__inline-menu {width:100%;}
