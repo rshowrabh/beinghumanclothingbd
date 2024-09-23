@@ -26,6 +26,9 @@ body{
 .bg-black{
     background: #000;
 }
+.header__icons svg{
+    height: 20px;
+}
 .btn {
     padding: 9px 130px;
     border-radius: 1px;
