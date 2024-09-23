@@ -298,18 +298,25 @@
           "settings": {
             "collection": "women-jents"
           }
+        },
+        "featured_collection_pVM4qG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "belts-for-men"
+          }
         }
       },
       "block_order": [
         "featured_collection_4Bt3n8",
         "featured_collection_4LPyNG",
-        "featured_collection_pfW8WG"
+        "featured_collection_pfW8WG",
+        "featured_collection_pVM4qG"
       ],
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
