@@ -3568,3 +3568,13 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.header__inline-menu {
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.header__inline-menu .list-menu {
+    width: 100%;
+}
