@@ -227,6 +227,42 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_banner_jQrz4L": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_TaWqpT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_EeqXhD": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TaWqpT",
+        "text_EeqXhD"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/welcome-to-my-business.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -237,6 +273,7 @@
     "youtube_video_aiWUiy",
     "season_sale_hViY8U",
     "filter_collection_efewLR",
-    "new_collection_style_mXGBAr"
+    "new_collection_style_mXGBAr",
+    "image_banner_jQrz4L"
   ]
 }
