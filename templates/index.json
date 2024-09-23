@@ -85,23 +85,23 @@
             "collection": "belts-for-men"
           }
         },
-        "featured_collection_4LPyNG": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
         "featured_collection_pfW8WG": {
           "type": "featured_collection",
           "settings": {
             "collection": "women-jents"
           }
+        },
+        "featured_collection_4LPyNG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
         }
       },
       "block_order": [
         "featured_collection_4Bt3n8",
-        "featured_collection_4LPyNG",
-        "featured_collection_pfW8WG"
+        "featured_collection_pfW8WG",
+        "featured_collection_4LPyNG"
       ],
       "settings": {
         "title": "",
