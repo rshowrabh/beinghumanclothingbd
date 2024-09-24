@@ -193,6 +193,7 @@
         "buttons_LMRGan"
       ],
       "settings": {
+        "image": "shopify://shop_images/bh-children_1_-6ee64238-5654-41c1-8b3c-b1d1f364e719.webp",
         "image_overlay_opacity": 20,
         "image_height": "adapt",
         "desktop_content_position": "bottom-right",
