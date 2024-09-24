@@ -30,28 +30,10 @@
             "color_scheme": "accent-1"
           }
         },
-        "slides_YhafLB": {
-          "type": "slides",
-          "settings": {
-            "bg_image": "shopify://shop_images/7-06-70061107-2c27-449a-8ae2-56a397399541.webp",
-            "content_position": "left-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "",
-            "sub_heading": "",
-            "text": "",
-            "btn_label": "",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "accent-1"
-          }
-        },
         "slides_c6JLek": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify://shop_images/being-0d1cb76e-886a-4065-824d-094643b9b5d9.webp",
+            "bg_image": "shopify://shop_images/7-06-70061107-2c27-449a-8ae2-56a397399541.webp",
             "content_position": "left-center",
             "content_alignment": "left",
             "opacity": 10,
@@ -69,7 +51,6 @@
       },
       "block_order": [
         "slides_XyizFj",
-        "slides_YhafLB",
         "slides_c6JLek"
       ],
       "settings": {
@@ -212,7 +193,6 @@
         "buttons_LMRGan"
       ],
       "settings": {
-        "image": "shopify://shop_images/bh-children_1_-6ee64238-5654-41c1-8b3c-b1d1f364e719.webp",
         "image_overlay_opacity": 20,
         "image_height": "adapt",
         "desktop_content_position": "bottom-right",
@@ -231,7 +211,6 @@
         "column_jg9dV9": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/fast-1340675c-895d-40af-a894-454b7d79e449.webp",
             "title": "<strong>Free Shipping</strong>",
             "text": "<p>We deliver our products right at<br/>your doorstep with the utmost care, love, not to mention free shipping</p>",
             "link_label": "",
@@ -241,7 +220,6 @@
         "column_47cMEc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/quality-38e9e69b-a8f7-436e-b695-c8601b82b664.png",
             "title": "<strong>High quality, Unbeatable value</strong>",
             "text": "<p>Our high-end fabric is everything you desire for your everyday comfort and fashion declaration.</p>",
             "link_label": "",
@@ -251,7 +229,6 @@
         "column_kLa8x6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/exchange-dd48d874-d0e9-4fa1-946b-24f11f0a44dd.webp",
             "title": "<strong>Easy Return</strong>",
             "text": "<p>Your shopping experience is made supremely easy and comfortable when it comes to returning products.</p>",
             "link_label": "",
