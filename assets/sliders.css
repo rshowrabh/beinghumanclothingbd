@@ -220,6 +220,9 @@ video.slider-video {
     right: inherit;
 }
 @media only screen and (max-width:767px) {
+  .slider-item.large {
+    height:400px;
+    }
     .slider-img.mobile {
         display: block;
     }
