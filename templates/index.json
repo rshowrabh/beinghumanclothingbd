@@ -201,9 +201,9 @@
         "desktop_content_alignment": "left",
         "color_scheme": "",
         "image_behavior": "ambient",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "shipping_badge_UMcmUP": {
