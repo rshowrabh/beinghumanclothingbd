@@ -60,29 +60,29 @@
     "new_collection_list_dGtUk4": {
       "type": "new-collection-list",
       "blocks": {
-        "featured_collection_4Bt3n8": {
+        "featured_collection_GFqJcH": {
           "type": "featured_collection",
           "settings": {
-            "collection": "belts-for-men"
+            "collection": "women-collections"
           }
         },
-        "featured_collection_pfW8WG": {
+        "featured_collection_qUhqwJ": {
           "type": "featured_collection",
           "settings": {
-            "collection": "women-jents"
+            "collection": "women-collections"
           }
         },
-        "featured_collection_4LPyNG": {
+        "featured_collection_nVCT8e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "shop-for-fair-trade"
+            "collection": "frontpage"
           }
         }
       },
       "block_order": [
-        "featured_collection_4Bt3n8",
-        "featured_collection_pfW8WG",
-        "featured_collection_4LPyNG"
+        "featured_collection_GFqJcH",
+        "featured_collection_qUhqwJ",
+        "featured_collection_nVCT8e"
       ],
       "settings": {
         "title": "",
