@@ -11,7 +11,7 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "top_bar_DCDcCc": {
+    "top_bar_3CAXKw": {
       "type": "top-bar",
       "settings": {
         "color_scheme": "scheme-4",
@@ -62,19 +62,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "top_bar_3CAXKw": {
-      "type": "top-bar",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "top_bar_3CAXKw",
-    "top_bar_DCDcCc",
     "announcement-bar",
     "header"
   ]
