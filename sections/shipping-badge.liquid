@@ -77,15 +77,11 @@
           >
             <div class="multicolumn-card content-container">
               {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+               
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width multicolumn-card-spacing">
                   <div
                     class="media media--transparent media--adapt"
-                    {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
                   >
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
