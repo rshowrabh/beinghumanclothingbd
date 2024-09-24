@@ -6,6 +6,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  media media--transparent media--adapt img{
+    height:35px;
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -81,7 +84,7 @@
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width multicolumn-card-spacing">
                   <div
                     class="media media--transparent media--adapt"
-                      style="padding-bottom:60px;"
+                      style="padding-bottom:35px;"
                   >
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
