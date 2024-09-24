@@ -222,15 +222,17 @@
         "column_Gyztwd": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/fast-1340675c-895d-40af-a894-454b7d79e449.webp",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_yEFbfh": {
+        "column_cNDWBh": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/quality-38e9e69b-a8f7-436e-b695-c8601b82b664_b6cb40d8-f16b-46ba-a73e-47517ae719b7.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -241,7 +243,7 @@
       "block_order": [
         "column_CM3JQM",
         "column_Gyztwd",
-        "column_yEFbfh"
+        "column_cNDWBh"
       ],
       "settings": {
         "title": "",
