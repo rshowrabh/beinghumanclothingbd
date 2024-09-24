@@ -64,11 +64,11 @@ body{
 
 /* Big Image Banner */
 
-.banner--mobile-bottom .banner__box {
+ .banner__box {
 	background: transparent;
 	color: #FFF;
 }
-.banner--mobile-bottom .banner__box h2{
+ .banner__box h2{
 	color: #FFF;
 }
 
