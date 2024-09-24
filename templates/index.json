@@ -212,6 +212,7 @@
         "column_jg9dV9": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/exchange-dd48d874-d0e9-4fa1-946b-24f11f0a44dd.webp",
             "title": "<strong>Free Shipping</strong>",
             "text": "<p>We deliver our products right at<br/>your doorstep with the utmost care, love, not to mention free shipping</p>",
             "link_label": "",
