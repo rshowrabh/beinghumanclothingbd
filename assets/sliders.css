@@ -8,7 +8,7 @@
     height: 650px;
 }
 .slider-item.large {
-    height: 100vh;
+    height: 100%;
 }
 .slider-info {
     position: absolute;
