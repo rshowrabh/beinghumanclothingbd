@@ -45,15 +45,16 @@
           <li><a href="{{ pages.return_policy.url }}">Return Policy</a></li>
         </ul>
       </div>
+        <!-- Newsletter Sign-Up Form -->
+    <div class="footer-column footer-newsletter">
+        <form action="{{ '/newsletter' | relative_url }}" method="post">
+          <input type="email" name="email" placeholder="Enter Your Email Id..." required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   
-    <!-- Newsletter Sign-Up Form -->
-    <div class="footer-newsletter">
-      <form action="{{ '/newsletter' | relative_url }}" method="post">
-        <input type="email" name="email" placeholder="Enter Your Email Id..." required>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  
   
     <!-- Social Media Icons -->
     <div class="footer-social">
