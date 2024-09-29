@@ -14,24 +14,40 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_4DMw4H": {
+        "link_list_xmV43f": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
-            "menu": ""
+            "menu": "footer"
+          }
+        },
+        "link_list_PVexih": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "support"
+          }
+        },
+        "image_bPNC4Y": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "link_list_4DMw4H"
+        "link_list_xmV43f",
+        "link_list_PVexih",
+        "image_bPNC4Y"
       ],
       "settings": {
         "payment_width": 90,
         "color_scheme": "scheme-1",
-        "newsletter_enable": false,
+        "newsletter_enable": true,
         "newsletter_heading": "",
-        "enable_follow_on_shop": false,
-        "show_social": false,
+        "enable_follow_on_shop": true,
+        "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
