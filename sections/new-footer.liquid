@@ -50,7 +50,6 @@
         </div>
         <!-- Newsletter Sign-Up Form -->
         <div class="footer-newsletter">
-          <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
@@ -78,8 +77,7 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
-                </div>
-            
+                </div>           
                 <button
                     type="submit"
                     name="commit"
@@ -108,7 +106,7 @@
                 </h3>
               {%- endif -%}
             {% endform %}
-          </div>
+
 
           <!-- Social Media Icons -->
           <div class="footer-social">
