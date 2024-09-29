@@ -3578,3 +3578,9 @@ details-disclosure > details {
 .header__inline-menu .list-menu {
     width: 100%;
 }
+
+.button--full-width {
+                width: calc(100% - 150px) !important;
+                margin-top: -72px;
+                margin-left: 150px;
+             }
