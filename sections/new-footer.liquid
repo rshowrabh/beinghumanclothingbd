@@ -43,7 +43,7 @@
       <!-- Links Section -->
       <div class="footer-links">
         <div class="footer-column">
-          <h4>{{section.settings.menu.heading}}</h4>
+          <h4>{{ section.settings.heading }}</h4>
           <ul>
             {% for link in section.settings.menu.links %}
                 <li><a href="{{ link.url }}">{{link.title}}</a></li>
@@ -52,7 +52,7 @@
           </ul>
         </div>
         <div class="footer-column">
-          <h4>{{section.settings.menu.heading2}}</h4>
+          <h4>{{ section.settings.heading2 }}</h4>
           <ul>
             {% for link in section.settings.menu2.links %}
                 <li><a href="{{ link.url }}">{{link.title}}</a></li>
