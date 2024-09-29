@@ -71,6 +71,12 @@
             "icon_3": "truck",
             "heading_3": "Heading"
           }
+        },
+        "custom_liquid_agcTVj": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -82,7 +88,8 @@
         "buy_buttons",
         "description",
         "share",
-        "icon_with_text_ttxUmr"
+        "icon_with_text_ttxUmr",
+        "custom_liquid_agcTVj"
       ],
       "settings": {
         "enable_sticky_info": false,
