@@ -18,7 +18,19 @@
     <footer>
       <!-- Logo and Description Section -->
       <div class="footer-logo">
-        <img src="{{ 'being-human-logo.png' | asset_url }}" alt="Being Human Clothing Logo">
+        {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+        {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+        {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+        {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+        {{ settings.logo | image_url: width: 600 | image_tag:
+          class: 'header__heading-logo motion-reduce',
+          widths: widths,
+          height: logo_height,
+          width: settings.logo_width,
+          alt: logo_alt,
+          sizes: sizes,
+          preload: true
+        }}
         <p>
           Being Human Clothing was founded in 2012 to further the objective of Being Human - The Salman Khan Foundation,
           a charitable trust devoted to education and healthcare initiatives for the underserved population in India.
@@ -114,6 +126,7 @@
           </div>
         </div>
       </div>
+      <hr>
       <!-- Copyright Section -->
       <div class="footer-copyright">
         <p>Copyright &copy; {{ 'now' | date: '%Y' }} Being Human Clothing. All rights reserved.</p>
@@ -196,7 +209,7 @@
             padding: 0;
             margin: 0;
            display: flex;
-           justify-content: center;
+           justify-content: flex-start;
            margin-bottom: 20px;
            max-width: 100%;
            width: 100%;
@@ -224,6 +237,9 @@
            color: #000;
            font-size: 20px;
          }
+         .footer-social ul {
+           display: flex;
+         }
 
          .footer-social a:hover {
            color: #555;
@@ -244,6 +260,7 @@
          }
          .newsletter-form__field-wrapper{
             max-width: 100% !important;
+            width: 100%;
          }
          footer .field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select::after {
             box-shadow: none;
