@@ -78,7 +78,8 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
-                  <button
+                </div>
+                <button
                     type="submit"
                     name="commit"
                     id="Subscribe"
@@ -86,7 +87,6 @@
                   >
                     Submit
                   </button>
-                </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                     {%- render 'icon-error' -%}
@@ -124,7 +124,6 @@
     <!-- CSS for styling the footer -->
     <style>
          footer {
-           background-color: #f8f8f8;
            padding: 40px;
          }
          footer .footer-logo{
@@ -148,15 +147,15 @@
          }
 
          .footer-links {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
          }
 
          .footer-column {
-      width: 25%;
-      align-self: flex-start;
+            width: 25%;
+            align-self: flex-start;
          }
 
          .footer-column h4 {
@@ -196,14 +195,6 @@
            margin-bottom: 20px;
          }
 
-         .footer-newsletter input[type="email"] {
-           padding: 10px;
-           width: 250px;
-           border: 1px solid #ccc;
-           border-radius: 5px;
-           margin-right: 10px;
-         }
-
          .footer-newsletter button {
            padding: 10px 20px;
            background-color: #000;
@@ -241,9 +232,6 @@
             padding: 0;
          }
     </style>
-
-    <!-- Include Font Awesome for social media icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </div>
 </div>
 
