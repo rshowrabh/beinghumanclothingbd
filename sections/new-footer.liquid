@@ -105,18 +105,18 @@
                     {{ form.errors.messages.email -}}
                   </small>
                 {%- endif -%}
+                {%- if form.posted_successfully? -%}
+                  <h3
+                    class="newsletter-form__message newsletter-form__message--success form__message"
+                    id="Newsletter-success--{{ section.id }}"
+                    tabindex="-1"
+                    autofocus
+                  >
+                    {% render 'icon-success' -%}
+                    {{- 'newsletter.success' | t }}
+                  </h3>
+                {%- endif -%}
               </div>
-              {%- if form.posted_successfully? -%}
-                <h3
-                  class="newsletter-form__message newsletter-form__message--success form__message"
-                  id="Newsletter-success--{{ section.id }}"
-                  tabindex="-1"
-                  autofocus
-                >
-                  {% render 'icon-success' -%}
-                  {{- 'newsletter.success' | t }}
-                </h3>
-              {%- endif -%}
             {% endform %}
 
 
@@ -166,7 +166,7 @@
          }
 
          .footer-column {
-            width: 25%;
+            flex:1 1 25%;
             align-self: flex-start;
          }
 
@@ -196,7 +196,7 @@
          }
 
          .footer-newsletter {
-            width: 50%;
+            width:1 1 50%;
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
