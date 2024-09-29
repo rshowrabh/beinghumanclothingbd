@@ -61,9 +61,9 @@
           </ul>
         </div>
         <!-- Newsletter Sign-Up Form -->
-        {% form 'customer', class: 'newsletter-form' %}
+       
         <div class="footer-newsletter">
-         
+          {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
                 <div class="field">
@@ -119,13 +119,13 @@
                     </h3>
                   {%- endif -%}
               </div>
-           
+            {% endform %}
            <!-- Social Media Icons -->
           <div class="footer-social">
             {%- render 'social-icons', class: 'footer__list-social' -%}
           </div>
         </div>
-         {% endform %}
+       
       </div>
       <hr>
       <!-- Copyright Section -->
