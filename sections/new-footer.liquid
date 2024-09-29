@@ -1,0 +1,224 @@
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+    <div class="section-{{ section.id }}-padding page-width">
+        <!-- HTML and Liquid template for the footer -->
+
+<footer>
+    <!-- Logo and Description Section -->
+    <div class="footer-logo">
+      <img src="{{ 'being-human-logo.png' | asset_url }}" alt="Being Human Clothing Logo">
+      <p>Being Human Clothing was founded in 2012 to further the objective of Being Human - The Salman Khan Foundation, a charitable trust devoted to education and healthcare initiatives for the underserved population in India.</p>
+    </div>
+  
+    <!-- Divider Line -->
+    <hr>
+  
+    <!-- Links Section -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="{{ pages.about_us.url }}">About Us</a></li>
+          <li><a href="{{ pages.contact_us.url }}">Contact Us</a></li>
+          <li><a href="{{ pages.store_locator.url }}">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="{{ pages.privacy_policy.url }}">Privacy Policy</a></li>
+          <li><a href="{{ pages.shipping_policy.url }}">Shipping Policy</a></li>
+          <li><a href="{{ pages.terms_conditions.url }}">Terms and Conditions</a></li>
+          <li><a href="{{ pages.track_order.url }}">Track Order</a></li>
+          <li><a href="{{ pages.return_policy.url }}">Return Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Newsletter Sign-Up Form -->
+    <div class="footer-newsletter">
+      <form action="{{ '/newsletter' | relative_url }}" method="post">
+        <input type="email" name="email" placeholder="Enter Your Email Id..." required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  
+    <!-- Social Media Icons -->
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  
+    <!-- Copyright Section -->
+    <div class="footer-copyright">
+      <p>Copyright &copy; {{ 'now' | date: "%Y" }} Being Human Clothing. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- CSS for styling the footer -->
+  <style>
+    footer {
+      background-color: #f8f8f8;
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .footer-logo img {
+      max-width: 150px;
+    }
+  
+    .footer-logo p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+  
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  
+    .footer-column {
+      flex: 1;
+      padding: 0 20px;
+    }
+  
+    .footer-column h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-column ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .footer-column ul li {
+      margin-bottom: 5px;
+    }
+  
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+  
+    .footer-column ul li a:hover {
+      color: #000;
+    }
+  
+    .footer-newsletter form {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  
+    .footer-newsletter button {
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .footer-newsletter button:hover {
+      background-color: #333;
+    }
+  
+    .footer-social a {
+      margin: 0 10px;
+      color: #000;
+      font-size: 20px;
+    }
+  
+    .footer-social a:hover {
+      color: #555;
+    }
+  
+    .footer-copyright {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+  
+  <!-- Include Font Awesome for social media icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "new footer",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "presets": [
+      {
+        "name": "new footer"
+      }
+    ]
+  }
+  {% endschema %}
+  
