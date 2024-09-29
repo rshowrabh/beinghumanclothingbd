@@ -90,6 +90,24 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     Enter your email id
                   </label>
+                  {%- if form.errors -%}
+                    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                      {%- render 'icon-error' -%}
+                      {{- form.errors.translated_fields.email | capitalize }}
+                      {{ form.errors.messages.email -}}
+                    </small>
+                  {%- endif -%}
+                  {%- if form.posted_successfully? -%}
+                    <h3
+                      class="newsletter-form__message newsletter-form__message--success form__message"
+                      id="Newsletter-success--{{ section.id }}"
+                      tabindex="-1"
+                      autofocus
+                    >
+                      {% render 'icon-success' -%}
+                      {{- 'newsletter.success' | t }}
+                    </h3>
+                  {%- endif -%}
                 </div>           
                 <button
                     type="submit"
@@ -101,26 +119,7 @@
                   </button>
               </div>
            
-              {%- if form.errors -%}
-                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-                  {%- render 'icon-error' -%}
-                  {{- form.errors.translated_fields.email | capitalize }}
-                  {{ form.errors.messages.email -}}
-                </small>
-              {%- endif -%}
-              {%- if form.posted_successfully? -%}
-                <h3
-                  class="newsletter-form__message newsletter-form__message--success form__message"
-                  id="Newsletter-success--{{ section.id }}"
-                  tabindex="-1"
-                  autofocus
-                >
-                  {% render 'icon-success' -%}
-                  {{- 'newsletter.success' | t }}
-                </h3>
-              {%- endif -%}
-
-          <!-- Social Media Icons -->
+           <!-- Social Media Icons -->
           <div class="footer-social">
             {%- render 'social-icons', class: 'footer__list-social' -%}
           </div>
